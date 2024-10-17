@@ -7,8 +7,15 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 2.5f;
     Vector2 movement;
 
-    public Rigidbody2D rb;
-    public Animator animator;
+    Rigidbody2D rb;
+    Animator animator;
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
