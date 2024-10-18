@@ -15,16 +15,14 @@ public class MonsterBase : MonoBehaviour
     public float stoppingDis;
     public float rayDistance = 1f;
     Transform player;
-    public LayerMask obstacleLayer;
-    
 
     [Header("Monster Stats")]
-    public float defaultSpeed;
-    public float adjustSpeed;
-    public float currentSpeed;
+    [SerializeField] protected float defaultSpeed;
+    [SerializeField] protected float adjustSpeed;
+    [SerializeField] protected float currentSpeed;
 
     [Header("AI")]
-    NavMeshAgent agent;
+    protected NavMeshAgent agent;
 
 
     protected virtual void Awake()
@@ -48,7 +46,7 @@ public class MonsterBase : MonoBehaviour
 
     protected virtual void Update()
     {
-
+        
     }
 
     protected virtual void FixedUpdate()

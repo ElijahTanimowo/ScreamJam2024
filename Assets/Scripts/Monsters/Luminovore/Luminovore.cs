@@ -19,6 +19,7 @@ public class Luminovore : MonsterBase
     protected override void Start()
     {
         base.Start();
+        
 
     }
 
@@ -34,7 +35,7 @@ public class Luminovore : MonsterBase
         {
             currentSpeed = defaultSpeed;
         }
-        
+        agent.speed = currentSpeed;
     }
 
     protected override void FixedUpdate()
