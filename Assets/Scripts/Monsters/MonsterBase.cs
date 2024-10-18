@@ -12,7 +12,7 @@ public class MonsterBase : MonoBehaviour
     public BoxCollider2D attackRangeCollider { get; private set; }
 
     [Header("Other Information")]
-    public float stoppingDis;
+    public float stoppingDistance;
     public float rayDistance = 1f;
     Transform player;
 
@@ -56,18 +56,22 @@ public class MonsterBase : MonoBehaviour
 
     private void PathFinding()
     {
+        //Get Direction of player
         Vector2 direction = (player.position - transform.position).normalized;
+        //Get Distance from monster to player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        Debug.DrawRay(transform.position, direction * stoppingDis, Color.red);
-
-        if (distanceToPlayer > stoppingDis)
+        //Stopping distance
+        Debug.DrawRay(transform.position, direction * stoppingDistance, Color.red);
+        
+        //Distance big, close the gap between monster and player
+        if (distanceToPlayer > stoppingDistance)
         {
 
-            Vector3 stopPosition = player.position - (Vector3)direction * stoppingDis;
+            Vector3 stopPosition = player.position - (Vector3)direction * stoppingDistance;
             agent.SetDestination(stopPosition);
             agent.isStopped = false;
         }
+        //Monster is at player pos, monster stop
         else
         {
             agent.isStopped = true;
