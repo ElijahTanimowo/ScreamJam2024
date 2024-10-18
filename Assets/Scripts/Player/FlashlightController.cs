@@ -143,6 +143,7 @@ public class FlashlightController : MonoBehaviour
                 monster.changeSpeed = false; // Reset the monster's speed
             }
         }
+        //Add to list
         monstersInLight = monstersHitThisFrame;
     }
 }
