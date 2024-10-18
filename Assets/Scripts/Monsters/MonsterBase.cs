@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MonsterBase : MonoBehaviour
 {
@@ -12,13 +13,18 @@ public class MonsterBase : MonoBehaviour
 
     [Header("Other Information")]
     public float stoppingDis;
+    public float rayDistance = 1f;
     Transform player;
+    public LayerMask obstacleLayer;
     
 
     [Header("Monster Stats")]
     public float defaultSpeed;
     public float adjustSpeed;
     public float currentSpeed;
+
+    [Header("AI")]
+    NavMeshAgent agent;
 
 
     protected virtual void Awake()
@@ -27,8 +33,8 @@ public class MonsterBase : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         monsterCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
+        agent = GetComponent<NavMeshAgent>();
         
-
     }
 
     protected virtual void Start()
@@ -36,6 +42,8 @@ public class MonsterBase : MonoBehaviour
         currentSpeed = defaultSpeed;
         rb.freezeRotation = true;
         player = PlayerManager.instance.player.transform;
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
     }
 
     protected virtual void Update()
@@ -45,25 +53,12 @@ public class MonsterBase : MonoBehaviour
 
     protected virtual void FixedUpdate()
     {
-        Move();
+        PathFinding();
     }
 
-    private void Move()
+    private void PathFinding()
     {
-        float disToPlayer = Vector2.Distance(transform.position, player.position);
-        
-        //if distance bigger, keep moving
-        if (disToPlayer > stoppingDis)
-        {
-            Vector2 dir = (player.position - transform.position).normalized;
-            Debug.DrawRay(transform.position, dir * disToPlayer, Color.red);
-            rb.MovePosition(rb.position + dir * adjustSpeed * Time.fixedDeltaTime);
-        }
-        //Stop monster moving
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
+        agent.SetDestination(player.position);
     }
 
 
