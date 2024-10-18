@@ -25,11 +25,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Get Player transform
-        if (player != null)
-        {
-            player = PlayerManager.instance.player.transform;
-        }
         
     }
 
