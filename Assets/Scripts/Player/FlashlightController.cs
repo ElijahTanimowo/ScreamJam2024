@@ -36,10 +36,13 @@ public class FlashlightController : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         // Check if player is idle
-        bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle");
+        bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") ||
+            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back");
 
         if (isIdle)
         {
+            // Determine Idle Stance
+            HandleIdleDirection(mousePos);
             // allow free rotation
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
@@ -55,6 +58,23 @@ public class FlashlightController : MonoBehaviour
 
         // Check for enemies in the flashlight cone
         CheckForEnemies(direction);
+    }
+
+    void HandleIdleDirection(Vector3 mousePos)
+    {
+        // Calculate the player's position on the screen
+        Vector3 playerPos = player.transform.position;
+
+        // If the mouse is above player, back idle
+        if (mousePos.y > playerPos.y)
+        {
+            playerAnimator.Play("Player_Idle_Back");
+        }
+        else
+        {
+            // If the mouse is below player, front idle
+            playerAnimator.Play("Player_Idle");
+        }
     }
 
     void UpdateFlashlightDirection()
