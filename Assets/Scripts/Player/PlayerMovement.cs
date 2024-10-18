@@ -10,11 +10,14 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
 
+    float lastMovement;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        lastMovement = -1;
     }
 
     // Update is called once per frame
@@ -24,9 +27,26 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        if (movement.y != 0)
+        {
+            lastMovement = movement.y;
+        }
+
         // update animator based on movement
         animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
+
+        // if player is almost idle
+        if (movement.sqrMagnitude < 0.01f)
+        {
+            // keep last direction
+            animator.SetFloat("Vertical", lastMovement);
+        }
+        else
+        {
+            // update direction
+            animator.SetFloat("Vertical", movement.y);
+        }
+
         animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
