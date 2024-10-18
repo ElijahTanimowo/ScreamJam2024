@@ -12,6 +12,7 @@ public class Luminovore : MonsterBase
     protected override void Start()
     {
         base.Start();
+
     }
 
     protected override void Update()
