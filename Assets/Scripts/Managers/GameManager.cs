@@ -26,7 +26,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //Get Player transform
-        player = PlayerManager.instance.player.transform;
+        if (player != null)
+        {
+            player = PlayerManager.instance.player.transform;
+        }
     }
 
     // Update is called once per frame
