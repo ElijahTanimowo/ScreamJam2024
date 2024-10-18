@@ -1959,7 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710c88d51fab5464ca8a0a915aea93d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoppingDis: 0
+  stoppingDis: 1
   rayDistance: 1
   defaultSpeed: 2
   adjustSpeed: 6

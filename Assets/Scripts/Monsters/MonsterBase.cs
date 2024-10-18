@@ -56,7 +56,22 @@ public class MonsterBase : MonoBehaviour
 
     private void PathFinding()
     {
-        agent.SetDestination(player.position);
+        Vector2 direction = (player.position - transform.position).normalized;
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        Debug.DrawRay(transform.position, direction * stoppingDis, Color.red);
+
+        if (distanceToPlayer > stoppingDis)
+        {
+
+            Vector3 stopPosition = player.position - (Vector3)direction * stoppingDis;
+            agent.SetDestination(stopPosition);
+            agent.isStopped = false;
+        }
+        else
+        {
+            agent.isStopped = true;
+        }
     }
 
 
