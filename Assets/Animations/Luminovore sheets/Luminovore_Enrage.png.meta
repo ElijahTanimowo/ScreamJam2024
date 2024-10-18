@@ -900,39 +900,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Luminovore_Enrage_0: 656841462059899939
-      Luminovore_Enrage_1: 5478102349838409554
-      Luminovore_Enrage_10: -2099939619588089121
-      Luminovore_Enrage_11: 5965318368339456318
-      Luminovore_Enrage_12: -8603259431758910246
-      Luminovore_Enrage_13: 8179616728217004058
-      Luminovore_Enrage_14: 6669549401979226374
-      Luminovore_Enrage_15: -4954788969438532942
-      Luminovore_Enrage_16: 2358642594766810456
-      Luminovore_Enrage_17: -6467756980464743470
-      Luminovore_Enrage_18: 5543195570756411862
-      Luminovore_Enrage_19: -6585267973183900571
-      Luminovore_Enrage_2: 4950891823954201288
-      Luminovore_Enrage_20: -4199973752610087712
-      Luminovore_Enrage_21: -514736210480543550
-      Luminovore_Enrage_22: -8740329484295477857
-      Luminovore_Enrage_23: -3390725500469746494
-      Luminovore_Enrage_24: 8168392830568880766
-      Luminovore_Enrage_25: -3969273335600728788
-      Luminovore_Enrage_26: -7724456389841033573
-      Luminovore_Enrage_27: 2053032254144276762
-      Luminovore_Enrage_28: -1481644524326937456
-      Luminovore_Enrage_29: 2288877331073078926
-      Luminovore_Enrage_3: -1601772013044152878
-      Luminovore_Enrage_30: -2779692838295507837
-      Luminovore_Enrage_31: -1603115132330033405
-      Luminovore_Enrage_4: 5562328540057381129
-      Luminovore_Enrage_5: 3392249193704560771
-      Luminovore_Enrage_6: -465713353444501101
-      Luminovore_Enrage_7: -2208065416866193515
-      Luminovore_Enrage_8: 2891550284126865433
-      Luminovore_Enrage_9: -6362079988791579783
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

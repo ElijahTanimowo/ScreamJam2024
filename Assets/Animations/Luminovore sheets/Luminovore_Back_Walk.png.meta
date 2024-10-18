@@ -468,21 +468,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Luminovore_Back_Walk_0: 796234676680533178
-      Luminovore_Back_Walk_1: -4880859730841343931
-      Luminovore_Back_Walk_10: -6140820704540367215
-      Luminovore_Back_Walk_11: -4579583374999716176
-      Luminovore_Back_Walk_12: -8837878924151834556
-      Luminovore_Back_Walk_13: -4193961653977065212
-      Luminovore_Back_Walk_2: 524628926172285157
-      Luminovore_Back_Walk_3: 7045877754125485577
-      Luminovore_Back_Walk_4: -645382226588866541
-      Luminovore_Back_Walk_5: -2274222959872596132
-      Luminovore_Back_Walk_6: -3813070311513869930
-      Luminovore_Back_Walk_7: 8445389833312899111
-      Luminovore_Back_Walk_8: -329914843523423304
-      Luminovore_Back_Walk_9: -6714639808625095085
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
