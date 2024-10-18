@@ -8,6 +8,17 @@ public class FlashlightController : MonoBehaviour
     public float flashlightDistance = 5f;
     public LayerMask enemyLayer;
 
+    private GameObject player;
+    private string currentPlayerDirection = "Down";
+
+    [SerializeField] Animator playerAnimator;
+
+    void Start()
+    {
+        player = transform.parent.gameObject;
+        playerAnimator = player.GetComponent<Animator>();
+    }
+
     void Update()
     {
         // Get mouse position
@@ -20,11 +31,61 @@ public class FlashlightController : MonoBehaviour
         // Get angle in degrees, convert to degrees
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // Apply rotation
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        // Check if player is idle
+        bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle");
+
+        if (isIdle)
+        {
+            // allow free rotation
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+        else
+        {
+            // limit flashlight rotation
+            UpdateFlashlightDirection();
+            if (IsInFlashlightRotationLimits(angle))
+            {
+                transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
+        }
 
         // Check for enemies in the flashlight cone
         CheckForEnemies(direction);
+    }
+
+    void UpdateFlashlightDirection()
+    {
+        // Get player direction from blend tree
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+
+        // Update player direction
+        if (horizontal > 0)
+            currentPlayerDirection = "Right";
+        else if (horizontal < 0)
+            currentPlayerDirection = "Left";
+        else if (vertical > 0)
+            currentPlayerDirection = "Up";
+        else if (vertical < 0)
+            currentPlayerDirection = "Down";
+    }
+
+    bool IsInFlashlightRotationLimits(float angle)
+    {
+        switch (currentPlayerDirection)
+        {
+            // Determine valid angles based on player direction
+            case "Right":
+                return angle > -90 && angle < 90;
+            case "Left":
+                return angle > 90 || angle < -90;
+            case "Up":
+                return angle > 0 && angle < 180;
+            case "Down":
+                return angle < 0 && angle > -180;
+            default:
+                return true;  // Default allows full rotation if something goes wrong
+        }
     }
 
     void CheckForEnemies(Vector3 direction)
@@ -45,14 +106,14 @@ public class FlashlightController : MonoBehaviour
             // Cast ray
             RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, flashlightDistance, enemyLayer);
 
-            // check if it hit enemy
+            // Check if it hit an enemy
             if (hit)
             {
                 // Calculate angle between flashlight direction and enemy direction
                 Vector3 enemyDirection = hit.transform.position - transform.position;
                 float angleToEnemy = Vector3.Angle(direction, enemyDirection);
 
-                // check if enemy is in flashlight cone
+                // Check if enemy is in flashlight cone
                 if (angleToEnemy < flashlightAngle / 2f)
                 {
                     Debug.Log("Enemy detected: " + hit.transform.name);
