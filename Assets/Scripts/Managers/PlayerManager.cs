@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
     private void Awake()
     {
         //Game Manager in world, destory
-        if (!instance)
+        if (instance != null)
         {
             Destroy(instance.gameObject);
         }

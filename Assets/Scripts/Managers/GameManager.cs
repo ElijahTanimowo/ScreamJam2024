@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         //Game Manager in world, destory
-        if (!instance)
+        if (instance != null)
         {
             Destroy(instance.gameObject);
         }
@@ -26,11 +26,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         //Get Player transform
-        if (player != null)
-        {
-            player = PlayerManager.instance.player.transform;
-        }
-        
+        player = PlayerManager.instance.player.transform;
     }
 
     // Update is called once per frame
