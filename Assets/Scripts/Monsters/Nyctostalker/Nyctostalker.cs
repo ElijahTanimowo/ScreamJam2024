@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Nyctostalker : MonsterBase
 {
-    //Check State of monster speed
-    public bool changeSpeed = false;
 
     protected override void Awake()
     {

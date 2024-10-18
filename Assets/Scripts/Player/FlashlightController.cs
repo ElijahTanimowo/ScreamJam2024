@@ -116,7 +116,14 @@ public class FlashlightController : MonoBehaviour
                 // Check if enemy is in flashlight cone
                 if (angleToEnemy < flashlightAngle / 2f)
                 {
-                    Debug.Log("Enemy detected: " + hit.transform.name);
+                    MonsterBase monster = hit.collider.gameObject.GetComponent<MonsterBase>();
+                    if (monster)
+                    {
+                        monster.changeSpeed = true;
+                        
+                        
+                    }
+
                 }
             }
         }
