@@ -2,17 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nyctostalker : MonoBehaviour
+public class Nyctostalker : MonsterBase
 {
-    // Start is called before the first frame update
-    void Start()
+    //Check State of monster speed
+    public bool changeSpeed = false;
+
+    protected override void Awake()
     {
-        
+        base.Awake();
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void Start()
     {
-        
+        base.Start();
     }
+
+    protected override void Update()
+    {
+        base.Update();
+
+        if (changeSpeed)
+        {
+            currentSpeed = adjustSpeed;
+        }
+        else
+        {
+            currentSpeed = defaultSpeed;
+        }
+        agent.speed = currentSpeed;
+    }
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+    }
+
 }
