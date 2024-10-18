@@ -9,7 +9,6 @@ public class MonsterBase : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public SpriteRenderer spriteRenderer { get; private set; }
     public CapsuleCollider2D monsterCollider { get; private set; }
-    public BoxCollider2D attackRangeCollider { get; private set; }
 
     [Header("Other Information")]
     public float stoppingDistance;
