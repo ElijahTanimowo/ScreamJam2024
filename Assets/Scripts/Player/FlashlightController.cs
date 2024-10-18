@@ -13,6 +13,10 @@ public class FlashlightController : MonoBehaviour
 
     [SerializeField] Animator playerAnimator;
 
+
+    // Keep track of monsters currently in the flashlight
+    private HashSet<MonsterBase> monstersInLight = new HashSet<MonsterBase>();
+
     void Start()
     {
         player = transform.parent.gameObject;
@@ -94,6 +98,8 @@ public class FlashlightController : MonoBehaviour
         int rayCount = 10;
         float angleStep = flashlightAngle / rayCount;
 
+        HashSet<MonsterBase> monstersHitThisFrame = new HashSet<MonsterBase>();
+
         // for each ray
         for (int i = 0; i <= rayCount; i++)
         {
@@ -116,9 +122,28 @@ public class FlashlightController : MonoBehaviour
                 // Check if enemy is in flashlight cone
                 if (angleToEnemy < flashlightAngle / 2f)
                 {
-                    Debug.Log("Enemy detected: " + hit.transform.name);
+                    MonsterBase monster = hit.collider.gameObject.GetComponent<MonsterBase>();
+                    if (monster)
+                    {
+                        monster.changeSpeed = true;
+
+                        // Add monster to this hit set
+                        monstersHitThisFrame.Add(monster);
+                    }
+
                 }
             }
         }
+
+        foreach (var monster in monstersInLight)
+        {
+            if (!monstersHitThisFrame.Contains(monster))
+            {
+                // Monster is no longer in the flashlight
+                monster.changeSpeed = false; // Reset the monster's speed
+            }
+        }
+        //Add to list
+        monstersInLight = monstersHitThisFrame;
     }
 }

@@ -14,6 +14,8 @@ public class MonsterBase : MonoBehaviour
     [Header("Other Information")]
     public float stoppingDistance;
     Transform player;
+    //Check State of monster speed
+    public bool changeSpeed = false;
 
     [Header("Monster Stats")]
     [SerializeField] protected float defaultSpeed;

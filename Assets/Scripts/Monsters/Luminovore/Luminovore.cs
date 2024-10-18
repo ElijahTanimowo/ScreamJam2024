@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class Luminovore : MonsterBase
 {
-    //Check State of monster speed
-    public bool changeSpeed = false;
+
 
 
     protected override void Awake()
