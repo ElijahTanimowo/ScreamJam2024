@@ -35,13 +35,13 @@ public class MonsterBase : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
         
-    }
 
+    }
     protected virtual void Start()
     {
         currentSpeed = defaultSpeed;
-        rb.freezeRotation = true;
         player = PlayerManager.instance.player.transform;
+        rb.freezeRotation = true;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
     }
