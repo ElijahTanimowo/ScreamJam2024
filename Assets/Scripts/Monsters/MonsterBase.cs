@@ -13,7 +13,6 @@ public class MonsterBase : MonoBehaviour
 
     [Header("Other Information")]
     public float stoppingDistance;
-    public float rayDistance = 1f;
     Transform player;
 
     [Header("Monster Stats")]
