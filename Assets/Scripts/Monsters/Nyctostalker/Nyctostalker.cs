@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class Nyctostalker : MonsterBase
 {
+
+    bool changeSpeed = false;
+
     protected override void Awake()
     {
         base.Awake();
-    }
-
-    protected override void FixedUpdate()
-    {
-        base.FixedUpdate();
     }
 
     protected override void Start()
@@ -22,5 +20,22 @@ public class Nyctostalker : MonsterBase
     protected override void Update()
     {
         base.Update();
+
+        if (changeSpeed)
+        {
+            currentSpeed = adjustSpeed;
+        }
+        else
+        {
+            currentSpeed = defaultSpeed;
+        }
+        agent.speed = currentSpeed;
+
     }
+
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+    }
+
 }
