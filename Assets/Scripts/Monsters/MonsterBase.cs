@@ -16,6 +16,7 @@ public class MonsterBase : MonoBehaviour
     Transform player;
     //Check State of monster speed
     public bool changeSpeed = false;
+    public float lifeTime = 15f;
 
     [Header("Monster Stats")]
     [SerializeField] protected float defaultSpeed;
