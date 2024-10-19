@@ -80,7 +80,9 @@ public class SpawnManager : MonoBehaviour
         if (spawnPosFound) 
         {
             int index = Random.Range(0, monsters.Length);
-            Instantiate(monsters[index], randomSpawnPoint, Quaternion.identity);
+            GameObject monster = Instantiate(monsters[index], randomSpawnPoint, Quaternion.identity);
+            Destroy(monster, monster.GetComponent<MonsterBase>().lifeTime);
+
         }
 
     }

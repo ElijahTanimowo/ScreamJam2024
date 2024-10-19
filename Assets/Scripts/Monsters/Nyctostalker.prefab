@@ -222,10 +222,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stoppingDistance: 1
+  changeSpeed: 0
+  lifeTime: 15
   defaultSpeed: 3
   adjustSpeed: 1
   currentSpeed: 0
-  changeSpeed: 0
 --- !u!195 &1705320127582092384
 NavMeshAgent:
   m_ObjectHideFlags: 0
