@@ -39,6 +39,7 @@ public class SpawnManager : MonoBehaviour
                 //Check Player is not in the area
                 if (!area.playerInArea)
                 {
+                    //Spawn Monster in that area
                     SpawnEnemy(areaCollider);
                 }
             }
