@@ -39,8 +39,9 @@ public class SpawnManager : MonoBehaviour
                 //Check Player is not in the area
                 if (!area.playerInArea)
                 {
+                    Debug.Log(spawnArea.gameObject.name);
                     //Spawn Monster in that area
-                    SpawnEnemy(areaCollider);
+                    //SpawnEnemy(areaCollider);
                 }
             }
         }
