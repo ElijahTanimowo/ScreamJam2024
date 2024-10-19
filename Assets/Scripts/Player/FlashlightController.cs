@@ -37,7 +37,9 @@ public class FlashlightController : MonoBehaviour
 
         // Check if player is idle
         bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") ||
-            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back");
+            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") ||
+            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") ||
+            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left");
 
         if (isIdle)
         {
@@ -65,15 +67,23 @@ public class FlashlightController : MonoBehaviour
         // Calculate the player's position on the screen
         Vector3 playerPos = player.transform.position;
 
-        // If the mouse is above player, back idle
-        if (mousePos.y > playerPos.y)
+        if (Mathf.Abs(mousePos.x - playerPos.x) > Mathf.Abs(mousePos.y - playerPos.y))
         {
-            playerAnimator.Play("Player_Idle_Back");
+            // If the mouse is right of player, right idle
+            if (mousePos.x > playerPos.x)
+                playerAnimator.Play("Player_Idle_Right");
+            else
+                // If the mouse is left of player, left idle
+                playerAnimator.Play("Player_Idle_Left");
         }
-        else
+        else 
         {
-            // If the mouse is below player, front idle
-            playerAnimator.Play("Player_Idle");
+            // If the mouse is above player, back idle
+            if (mousePos.y > playerPos.y)
+                playerAnimator.Play("Player_Idle_Back");
+            else
+                // If the mouse is below player, front idle
+                playerAnimator.Play("Player_Idle");
         }
     }
 
