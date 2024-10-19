@@ -28,9 +28,9 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         if (movement.y != 0)
-        {
             lastMovement = movement.y;
-        }
+        else if (movement.x != 0)
+            lastMovement = movement.x;
 
         // update animator based on movement
         animator.SetFloat("Horizontal", movement.x);
@@ -38,13 +38,18 @@ public class PlayerMovement : MonoBehaviour
         // if player is almost idle
         if (movement.sqrMagnitude < 0.01f)
         {
-            // keep last direction
-            animator.SetFloat("Vertical", lastMovement);
+            if (movement.y == 0)
+                // keep last direction
+                animator.SetFloat("Vertical", lastMovement);
+            if (movement.x == 0)
+                // keep last direction
+                animator.SetFloat("Horizontal", lastMovement);
         }
         else
         {
             // update direction
             animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Horizontal", movement.x);
         }
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
