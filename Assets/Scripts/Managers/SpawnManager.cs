@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -7,7 +8,7 @@ public class SpawnManager : MonoBehaviour
     public static SpawnManager instance;
 
     [SerializeField] GameObject[] monsters;
-    [SerializeField] BoxCollider2D spawnAreaCollider;
+    [SerializeField] GameObject[] spawnAreaCollider;
     [SerializeField] Vector2 spawnCheckSize = new Vector2(1, 1);
     [SerializeField] int maxAttemptToSpawn = 3;
 
@@ -24,22 +25,37 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void canSpawn()
+    public void CanSpawn(Transform _player)
     {
+        foreach (GameObject spawnArea in spawnAreaCollider) 
+        {
+            //get components
+            SpawnMonsterCheck area = spawnArea.GetComponent<SpawnMonsterCheck>();
+            BoxCollider2D areaCollider = area.GetComponent<BoxCollider2D>();
 
+            //Check Component exist in object
+            if (area && areaCollider) 
+            {
+                //Check Player is not in the area
+                if (!area.playerInArea)
+                {
+                    SpawnEnemy(areaCollider);
+                }
+            }
+        }
     }
 
     /// <summary>
     /// Spawn Enemies
     /// </summary>
-    void SpawnEnemy()
+    private void SpawnEnemy(BoxCollider2D _spawnAreaCollider)
     {
         
         Vector2 randomSpawnPoint = Vector2.zero;
         bool spawnPosFound = false;
 
         //Get the size of the spawn
-        Bounds spawnBound = spawnAreaCollider.bounds;
+        Bounds spawnBound = _spawnAreaCollider.bounds;
 
         //Keep trying to spawn monster
         for (int i = 0; i < maxAttemptToSpawn; i++) 
