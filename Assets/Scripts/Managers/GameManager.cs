@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool onCooldown = false;
     [SerializeField] float timeRemaining = 180f;
     [SerializeField] bool isTimeRunning = false;
+    public TextMeshProUGUI timeText;
 
     private void Awake()
     {
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
         SpawnManager.instance.CanSpawn(player);
     }
 
+
     /// <summary>
     /// Controls the time of the game
     /// </summary>
@@ -83,7 +86,8 @@ public class GameManager : MonoBehaviour
             if(timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
-                Debug.Log(timeRemaining);
+                DisplayTime(timeRemaining);
+                
             }
             else
             {
@@ -91,6 +95,25 @@ public class GameManager : MonoBehaviour
                 timeRemaining = 0;
                 isTimeRunning = false;
             }
+        }
+    }
+
+    /// <summary>
+    /// Display/Update time to screen
+    /// </summary>
+    /// <param name="_timeRemaining"></param>
+    void DisplayTime(float _timeRemaining)
+    {
+        _timeRemaining += 1;
+
+        float min = Mathf.FloorToInt(_timeRemaining / 60);
+        float sec = Mathf.FloorToInt(_timeRemaining % 60);
+
+        //Check text is exist
+        if (timeText)
+        {
+            //Setup text
+            timeText.text = string.Format("{0:00}:{1:00}", min, sec);
         }
     }
 }
