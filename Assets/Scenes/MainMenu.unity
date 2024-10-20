@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 1029233670}
   - component: {fileID: 1029233672}
   - component: {fileID: 1029233671}
+  - component: {fileID: 1029233673}
   m_Layer: 5
   m_Name: Background Image
   m_TagString: Untagged
@@ -397,7 +398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 45f1b1239cbcafb48b52a7b3a316377e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -415,6 +416,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029233669}
   m_CullTransparentMesh: 1
+--- !u!114 &1029233673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029233669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f28f718a0b08c42a35ff64cd78aaeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 1029233671}
+  backgroundSprites:
+  - {fileID: 21300000, guid: 45f1b1239cbcafb48b52a7b3a316377e, type: 3}
+  - {fileID: 21300000, guid: 23783dbaa3324bc4b8fe9eb4d2830a05, type: 3}
+  - {fileID: 21300000, guid: 1066772b01a4c964f8157cae0019f644, type: 3}
+  fadeDuration: 1
+  displayDuration: 10
 --- !u!1 &1364763378
 GameObject:
   m_ObjectHideFlags: 0
