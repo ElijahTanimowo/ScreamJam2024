@@ -59,9 +59,10 @@ public class GameManager : MonoBehaviour
     {
         if (currentState != GameState.Paused)
         {
+            Timer();
             if (currentState != GameState.End)
             {
-                Timer();
+                
                 StartCoroutine(SpawnMonstersTimer());
             }
 
