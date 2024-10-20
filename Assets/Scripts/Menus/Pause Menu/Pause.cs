@@ -6,7 +6,7 @@ public class Pause : MonoBehaviour
 {
     public void QuitGame()
     {
-        Debug.Log("Quit");
+        GameManager.instance.SwitchScenes("MainMenu");
     }
 
     public void ReturnGame()

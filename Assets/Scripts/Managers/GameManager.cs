@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -18,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
     private Transform player;
-    
+
 
     [Header("Monster Spawning Info")]
     [SerializeField] float spawnCooldown = 5f;
@@ -83,6 +80,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SwitchScenes(string _sceneName)
+    {
+        SceneManager.LoadScene(_sceneName);
+    }
+
     /// <summary>
     /// Controls Pause system
     /// </summary>
@@ -94,8 +96,8 @@ public class GameManager : MonoBehaviour
         {
             PauseGame();
         }
-        else 
-        { 
+        else
+        {
             ResumeGame();
         }
     }
@@ -112,6 +114,7 @@ public class GameManager : MonoBehaviour
         currentState = GameState.Playing;
         pauseMenu.gameObject.SetActive(false);
     }
+
 
     /// <summary>
     /// Controls the time when monster spawns
@@ -148,11 +151,11 @@ public class GameManager : MonoBehaviour
     {
         if (isTimeRunning)
         {
-            if(timeRemaining > 0)
+            if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
-                
+
             }
             else
             {
