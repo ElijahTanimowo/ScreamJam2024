@@ -7,53 +7,38 @@ public class BackgroundSwap : MonoBehaviour
 {
     public Image backgroundImage;
     public Sprite[] backgroundSprites;
-    public float fadeDuration = 1f;
-    public float displayDuration = 3f;
+    public float displayDuration = 4.5f;
+    public float lastBackgroundDisplayDuration = 1.5f;
 
-    private int currentImageIndex = 0;
-    private Color blackColor = Color.black;
-    private Color clearColor = Color.white;
+    private int currentBackgroundIndex = 0;
 
     void Start()
     {
-        // Start background fade and swap
-        StartCoroutine(FadeAndSwapBackgrounds());
+        // Start background swapping
+        StartCoroutine(SwapBackgrounds());
     }
 
-    IEnumerator FadeAndSwapBackgrounds()
+    IEnumerator SwapBackgrounds()
     {
         while (true)
         {
             // display current background
-            backgroundImage.color = clearColor;
+            backgroundImage.sprite = backgroundSprites[currentBackgroundIndex];
 
-            // wait for duration
-            yield return new WaitForSeconds(displayDuration);
+            // determine display duration
+            if (currentBackgroundIndex == backgroundSprites.Length - 1)
+            {
+                // shorter display duration
+                yield return new WaitForSeconds(lastBackgroundDisplayDuration);
+            }
+            else
+            {
+                // normal display duration
+                yield return new WaitForSeconds(displayDuration);
+            }
 
-            // fade to black
-            yield return StartCoroutine(FadeToColor(blackColor, fadeDuration));
-
-            // swap image
-            currentImageIndex = (currentImageIndex + 1) % backgroundSprites.Length;
-            backgroundImage.sprite = backgroundSprites[currentImageIndex];
-
-            // fade back in
-            yield return StartCoroutine(FadeToColor(clearColor, fadeDuration));
+            // swap to next background
+            currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundSprites.Length;
         }
-    }
-
-    IEnumerator FadeToColor(Color targetColor, float duration)
-    {
-        Color startColor = backgroundImage.color;
-        float time = 0;
-
-        while (time < duration)
-        {
-            backgroundImage.color = Color.Lerp(startColor, targetColor, time / duration);
-            time += Time.deltaTime;
-            yield return null;
-        }
-
-        backgroundImage.color = targetColor;
     }
 }
