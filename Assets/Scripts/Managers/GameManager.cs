@@ -9,12 +9,22 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    [Header("Player Info")]
+    [SerializeField] GameObject playerBody;
+    public bool playerBodySpawned = false;
     private Transform player;
+
+    [Header("Monster Spawning Info")]
     [SerializeField] float spawnCooldown = 5f;
     [SerializeField] bool onCooldown = false;
+
+    [Header("Clock Info")]
     [SerializeField] float timeRemaining = 180f;
     [SerializeField] bool isTimeRunning = false;
     public TextMeshProUGUI timeText;
+
+    
 
     private void Awake()
     {
@@ -72,7 +82,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     void SpawnMonsters()
     {
-        SpawnManager.instance.CanSpawn(player);
+        SpawnManager.instance.CanSpawn();
     }
 
 
@@ -94,6 +104,11 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Time is up");
                 timeRemaining = 0;
                 isTimeRunning = false;
+
+                if (!playerBodySpawned)
+                {
+                    SpawnManager.instance.CanSpawnPlayerBody(playerBody);
+                }
             }
         }
     }

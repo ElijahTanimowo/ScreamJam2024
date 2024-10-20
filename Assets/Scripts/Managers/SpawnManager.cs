@@ -7,10 +7,14 @@ public class SpawnManager : MonoBehaviour
 {
     public static SpawnManager instance;
 
+    [Header("Monster Spawn Info")]
     [SerializeField] GameObject[] monsters;
     [SerializeField] GameObject[] spawnAreaCollider;
     [SerializeField] Vector2 spawnCheckSize = new Vector2(1, 1);
     [SerializeField] int maxAttemptToSpawn = 3;
+
+    [Header("Player body Spawn Info")]
+    [SerializeField] Collider2D playerBodySpawn;
 
     private void Awake()
     {
@@ -25,7 +29,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void CanSpawn(Transform _player)
+    public void CanSpawn()
     {
         foreach (GameObject spawnArea in spawnAreaCollider) 
         {
@@ -46,6 +50,7 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
+
 
     /// <summary>
     /// Spawn Enemies
@@ -84,6 +89,38 @@ public class SpawnManager : MonoBehaviour
             Destroy(monster, monster.GetComponent<MonsterBase>().lifeTime);
 
         }
+
+    }
+
+    public void CanSpawnPlayerBody(GameObject _playerBodyPrefab)
+    {
+
+
+        Vector2 randomSpawnPoint = Vector2.zero;
+
+        //Get the size of the spawn
+        Bounds spawnBound = playerBodySpawn.bounds;
+
+        while (true)
+        {
+            //Get Random spawn
+            randomSpawnPoint = new Vector2(
+                Random.Range(spawnBound.min.x, spawnBound.max.x),
+                Random.Range(spawnBound.min.y, spawnBound.max.y)
+                );
+
+            //Check can spawn
+            if (CheckCanSpawn(randomSpawnPoint))
+            {
+                GameManager.instance.playerBodySpawned = true;
+                break;
+            }
+        }
+        Instantiate(_playerBodyPrefab, randomSpawnPoint, Quaternion.identity);
+    }
+
+    private void SpawnPlayerBody()
+    {
 
     }
 
