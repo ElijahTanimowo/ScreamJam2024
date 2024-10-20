@@ -1,34 +1,34 @@
 fileFormatVersion: 2
-guid: 6539e7ae4b044264088b02ede40b4c0d
+guid: 3fa7310cb61737645b8aab08b110962f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3817693690719672775
-    second: Player_Front_walk_0
+      213: 3599878301525189683
+    second: Player_Back_Idle_0
   - first:
-      213: 3781440567561902466
-    second: Player_Front_walk_1
+      213: -425016634115425485
+    second: Player_Back_Idle_1
   - first:
-      213: -5591051214841697093
-    second: Player_Front_walk_2
+      213: 8630768514926398761
+    second: Player_Back_Idle_2
   - first:
-      213: 7953248921070307782
-    second: Player_Front_walk_3
+      213: -6524869812650844855
+    second: Player_Back_Idle_3
   - first:
-      213: -7478010869236852213
-    second: Player_Front_walk_4
+      213: -2483018045620123142
+    second: Player_Back_Idle_4
   - first:
-      213: -4348269591412655797
-    second: Player_Front_walk_5
+      213: -1500546891254435066
+    second: Player_Back_Idle_5
   - first:
-      213: -8167480268359446849
-    second: Player_Front_walk_6
+      213: -2254827840174664163
+    second: Player_Back_Idle_6
   - first:
-      213: 9110778303746179184
-    second: Player_Front_walk_7
+      213: 856961635756259451
+    second: Player_Back_Idle_7
   - first:
-      213: -6563902665630502934
-    second: Player_Front_walk_8
+      213: 8172083761499393196
+    second: Player_Back_Idle_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -146,11 +146,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Front_walk_0
+      name: Player_Back_Idle_0
       rect:
         serializedVersion: 2
         x: 21
@@ -164,17 +177,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9366767b0d3d40bc0800000000000000
-      internalID: -3817693690719672775
+      spriteID: 334ab050e3655f130800000000000000
+      internalID: 3599878301525189683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_1
+      name: Player_Back_Idle_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 85
         y: 0
         width: 22
         height: 59
@@ -185,20 +198,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28957c849206a7430800000000000000
-      internalID: 3781440567561902466
+      spriteID: 33bfae38f990a1af0800000000000000
+      internalID: -425016634115425485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_2
+      name: Player_Back_Idle_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 149
         y: 0
         width: 22
-        height: 59
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bbc2852fa889862b0800000000000000
-      internalID: -5591051214841697093
+      spriteID: 92d40de8c36a6c770800000000000000
+      internalID: 8630768514926398761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_3
+      name: Player_Back_Idle_3
       rect:
         serializedVersion: 2
-        x: 212
+        x: 213
         y: 0
         width: 22
-        height: 59
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c987ae61cd9f5e60800000000000000
-      internalID: 7953248921070307782
+      spriteID: 94dd643c9710375a0800000000000000
+      internalID: -6524869812650844855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_4
+      name: Player_Back_Idle_4
       rect:
         serializedVersion: 2
         x: 277
         y: 0
         width: 22
-        height: 59
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,17 +261,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0a90a01cb4c83890800000000000000
-      internalID: -7478010869236852213
+      spriteID: af98deb3e3c8a8dd0800000000000000
+      internalID: -2483018045620123142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_5
+      name: Player_Back_Idle_5
       rect:
         serializedVersion: 2
-        x: 342
+        x: 341
         y: 0
         width: 22
         height: 59
@@ -269,17 +282,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b49373048d7d7a3c0800000000000000
-      internalID: -4348269591412655797
+      spriteID: 60376f97d8cfc2be0800000000000000
+      internalID: -1500546891254435066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_6
+      name: Player_Back_Idle_6
       rect:
         serializedVersion: 2
-        x: 406
+        x: 405
         y: 0
         width: 22
         height: 59
@@ -290,17 +303,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fbe4c6618f747ae80800000000000000
-      internalID: -8167480268359446849
+      spriteID: d165ab4a60e35b0e0800000000000000
+      internalID: -2254827840174664163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_7
+      name: Player_Back_Idle_7
       rect:
         serializedVersion: 2
-        x: 470
+        x: 469
         y: 0
         width: 22
         height: 59
@@ -311,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0708026a89cff6e70800000000000000
-      internalID: 9110778303746179184
+      spriteID: b78b36d311a84eb00800000000000000
+      internalID: 856961635756259451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_walk_8
+      name: Player_Back_Idle_8
       rect:
         serializedVersion: 2
         x: 533
@@ -332,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aefaada7d4558e4a0800000000000000
-      internalID: -6563902665630502934
+      spriteID: cacc8ee22e2196170800000000000000
+      internalID: 8172083761499393196
       vertices: []
       indices: 
       edges: []
@@ -349,15 +362,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Front_walk_0: -3817693690719672775
-      Player_Front_walk_1: 3781440567561902466
-      Player_Front_walk_2: -5591051214841697093
-      Player_Front_walk_3: 7953248921070307782
-      Player_Front_walk_4: -7478010869236852213
-      Player_Front_walk_5: -4348269591412655797
-      Player_Front_walk_6: -8167480268359446849
-      Player_Front_walk_7: 9110778303746179184
-      Player_Front_walk_8: -6563902665630502934
+      Player_Back_Idle_0: 3599878301525189683
+      Player_Back_Idle_1: -425016634115425485
+      Player_Back_Idle_2: 8630768514926398761
+      Player_Back_Idle_3: -6524869812650844855
+      Player_Back_Idle_4: -2483018045620123142
+      Player_Back_Idle_5: -1500546891254435066
+      Player_Back_Idle_6: -2254827840174664163
+      Player_Back_Idle_7: 856961635756259451
+      Player_Back_Idle_8: 8172083761499393196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

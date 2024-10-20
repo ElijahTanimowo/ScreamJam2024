@@ -1,34 +1,49 @@
 fileFormatVersion: 2
-guid: 3fa7310cb61737645b8aab08b110962f
+guid: cfad6bb7a96a82f4285aae2905a0ecac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3599878301525189683
-    second: Player_Back_Idle_0
+      213: 8187786213943172441
+    second: Luminovore_Front_Idle_0
   - first:
-      213: -425016634115425485
-    second: Player_Back_Idle_1
+      213: -5046738477660607961
+    second: Luminovore_Front_Idle_1
   - first:
-      213: 8630768514926398761
-    second: Player_Back_Idle_2
+      213: 1180433695407901101
+    second: Luminovore_Front_Idle_2
   - first:
-      213: -6524869812650844855
-    second: Player_Back_Idle_3
+      213: -1760955968517342050
+    second: Luminovore_Front_Idle_3
   - first:
-      213: -2483018045620123142
-    second: Player_Back_Idle_4
+      213: -3289527875898905182
+    second: Luminovore_Front_Idle_4
   - first:
-      213: -1500546891254435066
-    second: Player_Back_Idle_5
+      213: -2881656138748278775
+    second: Luminovore_Front_Idle_5
   - first:
-      213: -2254827840174664163
-    second: Player_Back_Idle_6
+      213: -3888353464975604331
+    second: Luminovore_Front_Idle_6
   - first:
-      213: 856961635756259451
-    second: Player_Back_Idle_7
+      213: 9067800892956567677
+    second: Luminovore_Front_Idle_7
   - first:
-      213: 8172083761499393196
-    second: Player_Back_Idle_8
+      213: -2771290971411471605
+    second: Luminovore_Front_Idle_8
+  - first:
+      213: 1178435222071500908
+    second: Luminovore_Front_Idle_9
+  - first:
+      213: 6574346143244352231
+    second: Luminovore_Front_Idle_10
+  - first:
+      213: -1365232565504291625
+    second: Luminovore_Front_Idle_11
+  - first:
+      213: 2853802686739706221
+    second: Luminovore_Front_Idle_12
+  - first:
+      213: -295442890380978403
+    second: Luminovore_Front_Idle_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -146,17 +161,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Back_Idle_0
+      name: Luminovore_Front_Idle_0
       rect:
         serializedVersion: 2
-        x: 21
+        x: 2
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 334ab050e3655f130800000000000000
-      internalID: 3599878301525189683
+      spriteID: 95d5cea4e2cd0a170800000000000000
+      internalID: 8187786213943172441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_1
+      name: Luminovore_Front_Idle_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 66
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33bfae38f990a1af0800000000000000
-      internalID: -425016634115425485
+      spriteID: 72a6eb4e71266f9b0800000000000000
+      internalID: -5046738477660607961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_2
+      name: Luminovore_Front_Idle_2
       rect:
         serializedVersion: 2
-        x: 149
+        x: 130
         y: 0
-        width: 22
-        height: 60
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92d40de8c36a6c770800000000000000
-      internalID: 8630768514926398761
+      spriteID: da980b7113eb16010800000000000000
+      internalID: 1180433695407901101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_3
+      name: Luminovore_Front_Idle_3
       rect:
         serializedVersion: 2
-        x: 213
+        x: 194
         y: 0
-        width: 22
-        height: 60
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94dd643c9710375a0800000000000000
-      internalID: -6524869812650844855
+      spriteID: e9c7b6760e3df87e0800000000000000
+      internalID: -1760955968517342050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_4
+      name: Luminovore_Front_Idle_4
       rect:
         serializedVersion: 2
-        x: 277
+        x: 258
         y: 0
-        width: 22
-        height: 60
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: af98deb3e3c8a8dd0800000000000000
-      internalID: -2483018045620123142
+      spriteID: 2adec4653df3952d0800000000000000
+      internalID: -3289527875898905182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_5
+      name: Luminovore_Front_Idle_5
       rect:
         serializedVersion: 2
-        x: 341
+        x: 322
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +297,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60376f97d8cfc2be0800000000000000
-      internalID: -1500546891254435066
+      spriteID: 908c51d620d4208d0800000000000000
+      internalID: -2881656138748278775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_6
+      name: Luminovore_Front_Idle_6
       rect:
         serializedVersion: 2
-        x: 405
+        x: 386
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +318,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d165ab4a60e35b0e0800000000000000
-      internalID: -2254827840174664163
+      spriteID: 59548feff1bc90ac0800000000000000
+      internalID: -3888353464975604331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_7
+      name: Luminovore_Front_Idle_7
       rect:
         serializedVersion: 2
-        x: 469
+        x: 450
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b78b36d311a84eb00800000000000000
-      internalID: 856961635756259451
+      spriteID: d7865ae6edc47dd70800000000000000
+      internalID: 9067800892956567677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Back_Idle_8
+      name: Luminovore_Front_Idle_8
       rect:
         serializedVersion: 2
-        x: 533
+        x: 514
         y: 0
-        width: 22
-        height: 59
+        width: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +360,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cacc8ee22e2196170800000000000000
-      internalID: 8172083761499393196
+      spriteID: b03a5cf5b856a89d0800000000000000
+      internalID: -2771290971411471605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luminovore_Front_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 0
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6061624794aa5010800000000000000
+      internalID: 1178435222071500908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luminovore_Front_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eaf9822cf4cc3b50800000000000000
+      internalID: 6574346143244352231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luminovore_Front_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 0
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc42590738bd0de0800000000000000
+      internalID: -1365232565504291625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luminovore_Front_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 0
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61fc2a6c6eba9720800000000000000
+      internalID: 2853802686739706221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luminovore_Front_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d175d6ba14066ebf0800000000000000
+      internalID: -295442890380978403
       vertices: []
       indices: 
       edges: []
@@ -349,15 +482,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Back_Idle_0: 3599878301525189683
-      Player_Back_Idle_1: -425016634115425485
-      Player_Back_Idle_2: 8630768514926398761
-      Player_Back_Idle_3: -6524869812650844855
-      Player_Back_Idle_4: -2483018045620123142
-      Player_Back_Idle_5: -1500546891254435066
-      Player_Back_Idle_6: -2254827840174664163
-      Player_Back_Idle_7: 856961635756259451
-      Player_Back_Idle_8: 8172083761499393196
+      Luminovore_Front_Idle_0: 8187786213943172441
+      Luminovore_Front_Idle_1: -5046738477660607961
+      Luminovore_Front_Idle_10: 6574346143244352231
+      Luminovore_Front_Idle_11: -1365232565504291625
+      Luminovore_Front_Idle_12: 2853802686739706221
+      Luminovore_Front_Idle_13: -295442890380978403
+      Luminovore_Front_Idle_2: 1180433695407901101
+      Luminovore_Front_Idle_3: -1760955968517342050
+      Luminovore_Front_Idle_4: -3289527875898905182
+      Luminovore_Front_Idle_5: -2881656138748278775
+      Luminovore_Front_Idle_6: -3888353464975604331
+      Luminovore_Front_Idle_7: 9067800892956567677
+      Luminovore_Front_Idle_8: -2771290971411471605
+      Luminovore_Front_Idle_9: 1178435222071500908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
