@@ -86,6 +86,7 @@ public class SpawnManager : MonoBehaviour
         {
             int index = Random.Range(0, monsters.Length);
             GameObject monster = Instantiate(monsters[index], randomSpawnPoint, Quaternion.identity);
+            monster.transform.SetParent(this.transform);
             Destroy(monster, monster.GetComponent<MonsterBase>().lifeTime);
 
         }
@@ -119,9 +120,15 @@ public class SpawnManager : MonoBehaviour
         Instantiate(_playerBodyPrefab, randomSpawnPoint, Quaternion.identity);
     }
 
-    private void SpawnPlayerBody()
+    /// <summary>
+    /// Clear the Monster in Spawn Manager
+    /// </summary>
+    public void ClearMonsters()
     {
-
+        foreach (Transform monster in this.transform)
+        {
+            Destroy(monster.gameObject);
+        }
     }
 
     /// <summary>
