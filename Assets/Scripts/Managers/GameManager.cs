@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
     public static GameManager instance;
     public bool isPaused = false;
-    [SerializeField] GameObject pauseMenu;
+    public GameObject pauseMenu;
 
     [Header("Player Info")]
     [SerializeField] GameObject playerBody;
@@ -41,6 +41,9 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        //Disable the pause Menu
+        pauseMenu.gameObject.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -60,8 +63,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (currentState != GameState.Paused)
+        if (currentState == GameState.Playing)
         {
             Time.timeScale = 1f;
             Timer();
@@ -79,13 +81,11 @@ public class GameManager : MonoBehaviour
                 SpawnManager.instance.ClearMonsters();
             }
         }
-        else if (currentState == GameState.Paused) 
-        {
-            
-        }
     }
 
-
+    /// <summary>
+    /// Controls Pause system
+    /// </summary>
     public void TogglePause()
     {
         isPaused = !isPaused;
@@ -107,11 +107,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    void ResumeGame()
+    public void ResumeGame()
     {
         currentState = GameState.Playing;
         pauseMenu.gameObject.SetActive(false);
-        Time.timeScale = 1f;
     }
 
     /// <summary>
