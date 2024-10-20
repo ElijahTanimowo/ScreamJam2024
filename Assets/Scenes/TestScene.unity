@@ -8636,6 +8636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5be2d990dbfd704ca4d1d948450fc16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   playerBody: {fileID: 1540657792191495681, guid: 2f1d297db11f6f848b8ea018404bdd3d, type: 3}
   playerBodySpawned: 0
   spawnCooldown: 5

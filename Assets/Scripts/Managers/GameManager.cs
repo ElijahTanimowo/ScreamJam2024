@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("Game Manager Info")]
+    public GameState currentState;
     public static GameManager instance;
 
     [Header("Player Info")]
@@ -49,13 +51,21 @@ public class GameManager : MonoBehaviour
         }
 
         isTimeRunning = true;
+
+        currentState = GameState.Playing;
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(SpawnMonstersTimer());
-        Timer();
+        if (currentState == GameState.Playing)
+        { 
+            Timer();
+        }
+        if (currentState != GameState.End)
+        {
+            StartCoroutine(SpawnMonstersTimer());
+        }
     }
 
     /// <summary>
@@ -108,6 +118,7 @@ public class GameManager : MonoBehaviour
                 if (!playerBodySpawned)
                 {
                     SpawnManager.instance.CanSpawnPlayerBody(playerBody);
+                    timeText.text = "";
                 }
             }
         }
@@ -130,5 +141,6 @@ public class GameManager : MonoBehaviour
             //Setup text
             timeText.text = string.Format("{0:00}:{1:00}", min, sec);
         }
+
     }
 }
