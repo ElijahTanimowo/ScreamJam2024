@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: fe5f9b38f67f9a845ab8572281a18c1d
+guid: c790328a78e3bac4eb95112435c7e619
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3104397128094228465
-    second: Player_Front_Idle_0
+      213: 8169203661571087675
+    second: Player_Back_walk_0
   - first:
-      213: 7729075097476909857
-    second: Player_Front_Idle_1
+      213: -335963084065551442
+    second: Player_Back_walk_1
   - first:
-      213: 1288592452848106656
-    second: Player_Front_Idle_2
+      213: -1411893645287584562
+    second: Player_Back_walk_2
   - first:
-      213: 9006250046495666681
-    second: Player_Front_Idle_3
+      213: -5779970411531337356
+    second: Player_Back_walk_3
   - first:
-      213: 3663176682788274205
-    second: Player_Front_Idle_4
+      213: 9044522247770749190
+    second: Player_Back_walk_4
   - first:
-      213: 4544153070971295244
-    second: Player_Front_Idle_5
+      213: -7072036358755138763
+    second: Player_Back_walk_5
   - first:
-      213: 467260661190695507
-    second: Player_Front_Idle_6
+      213: 5271961526039831449
+    second: Player_Back_walk_6
   - first:
-      213: 7984264951540382171
-    second: Player_Front_Idle_7
+      213: 306541862885774277
+    second: Player_Back_walk_7
   - first:
-      213: 1471407989191404587
-    second: Player_Front_Idle_8
-  - first:
-      213: 681972873393068872
-    second: Player_Front_Idle_9
+      213: -32093960308165995
+    second: Player_Back_walk_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -149,11 +146,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Front_Idle_0
+      name: Player_Back_walk_0
       rect:
         serializedVersion: 2
         x: 21
@@ -167,17 +177,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ff9ccd7db8051b20800000000000000
-      internalID: 3104397128094228465
+      spriteID: b3dd3c9a277de5170800000000000000
+      internalID: 8169203661571087675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_1
+      name: Player_Back_walk_1
       rect:
         serializedVersion: 2
-        x: 85
+        x: 84
         y: 0
         width: 22
         height: 59
@@ -188,17 +198,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12bcd6bc9d0334b60800000000000000
-      internalID: 7729075097476909857
+      spriteID: eabc0a4ea5b665bf0800000000000000
+      internalID: -335963084065551442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_2
+      name: Player_Back_walk_2
       rect:
         serializedVersion: 2
-        x: 149
+        x: 148
         y: 0
         width: 22
         height: 59
@@ -209,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0acb244320002e110800000000000000
-      internalID: 1288592452848106656
+      spriteID: ecc800cc532f76ce0800000000000000
+      internalID: -1411893645287584562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_3
+      name: Player_Back_walk_3
       rect:
         serializedVersion: 2
-        x: 213
+        x: 212
         y: 0
         width: 22
-        height: 60
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +240,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f138bb33b0acfc70800000000000000
-      internalID: 9006250046495666681
+      spriteID: 4710868c88b69cfa0800000000000000
+      internalID: -5779970411531337356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_4
+      name: Player_Back_walk_4
       rect:
         serializedVersion: 2
         x: 277
         y: 0
         width: 22
-        height: 60
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,38 +261,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d10c61fd8c736d230800000000000000
-      internalID: 3663176682788274205
+      spriteID: 6093e7d7019948d70800000000000000
+      internalID: 9044522247770749190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_5
+      name: Player_Back_walk_5
       rect:
         serializedVersion: 2
-        x: 341
-        y: 0
-        width: 22
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c069e306423101f30800000000000000
-      internalID: 4544153070971295244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Front_Idle_6
-      rect:
-        serializedVersion: 2
-        x: 405
+        x: 342
         y: 0
         width: 22
         height: 59
@@ -293,17 +282,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35a19cf781b0c7600800000000000000
-      internalID: 467260661190695507
+      spriteID: 533c0c5a6641bdd90800000000000000
+      internalID: -7072036358755138763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_7
+      name: Player_Back_walk_6
       rect:
         serializedVersion: 2
-        x: 469
+        x: 406
         y: 0
         width: 22
         height: 59
@@ -314,14 +303,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd97a25cbaecdce60800000000000000
-      internalID: 7984264951540382171
+      spriteID: 993612d6315c92940800000000000000
+      internalID: 5271961526039831449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Front_Idle_8
+      name: Player_Back_walk_7
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 0
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3d71e333e014400800000000000000
+      internalID: 306541862885774277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Back_walk_8
       rect:
         serializedVersion: 2
         x: 533
@@ -335,29 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2cec6335cd7b6410800000000000000
-      internalID: 1471407989191404587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Front_Idle_9
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 0
-        width: 22
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84bdb0117bad67900800000000000000
-      internalID: 681972873393068872
+      spriteID: 592756096bafd8ff0800000000000000
+      internalID: -32093960308165995
       vertices: []
       indices: 
       edges: []
@@ -373,16 +362,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Player_Front_Idle_0: 3104397128094228465
-      Player_Front_Idle_1: 7729075097476909857
-      Player_Front_Idle_2: 1288592452848106656
-      Player_Front_Idle_3: 9006250046495666681
-      Player_Front_Idle_4: 3663176682788274205
-      Player_Front_Idle_5: 4544153070971295244
-      Player_Front_Idle_6: 467260661190695507
-      Player_Front_Idle_7: 7984264951540382171
-      Player_Front_Idle_8: 1471407989191404587
-      Player_Front_Idle_9: 681972873393068872
+      Player_Back_walk_0: 8169203661571087675
+      Player_Back_walk_1: -335963084065551442
+      Player_Back_walk_2: -1411893645287584562
+      Player_Back_walk_3: -5779970411531337356
+      Player_Back_walk_4: 9044522247770749190
+      Player_Back_walk_5: -7072036358755138763
+      Player_Back_walk_6: 5271961526039831449
+      Player_Back_walk_7: 306541862885774277
+      Player_Back_walk_8: -32093960308165995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
