@@ -69,16 +69,17 @@ public class GameManager : MonoBehaviour
 
                 StartCoroutine(SpawnMonstersTimer());
             }
+        }
 
-            //End the session
-            else if (currentState == GameState.End)
-            {
-                isSpawning = false;
-                StopCoroutine(SpawnMonstersTimer());
-                SpawnManager.instance.ClearMonsters();
-            }
+        //End the session
+        else if (currentState == GameState.End)
+        {
+            isSpawning = false;
+            StopCoroutine(SpawnMonstersTimer());
+            SpawnManager.instance.ClearMonsters();
         }
     }
+
 
     public void SwitchScenes(string _sceneName)
     {
