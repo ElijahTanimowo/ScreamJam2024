@@ -11,11 +11,13 @@ public class GameManager : MonoBehaviour
     [Header("Game Manager Info")]
     public GameState currentState;
     public static GameManager instance;
+    public bool isPaused = false;
 
     [Header("Player Info")]
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
     private Transform player;
+    
 
     [Header("Monster Spawning Info")]
     [SerializeField] float spawnCooldown = 5f;
@@ -57,12 +59,14 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (currentState != GameState.Paused)
         {
+            Time.timeScale = 1f;
             Timer();
             if (currentState != GameState.End)
             {
-                
+
                 StartCoroutine(SpawnMonstersTimer());
             }
 
@@ -74,6 +78,37 @@ public class GameManager : MonoBehaviour
                 SpawnManager.instance.ClearMonsters();
             }
         }
+        else if (currentState == GameState.Paused) 
+        {
+            
+        }
+    }
+
+
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            PauseGame();
+        }
+        else 
+        { 
+            ResumeGame();
+        }
+    }
+
+    void PauseGame()
+    {
+        currentState = GameState.Paused;
+        Time.timeScale = 0;
+    }
+
+    void ResumeGame()
+    {
+        currentState = GameState.Playing;
+        Time.timeScale = 1f;
     }
 
     /// <summary>
