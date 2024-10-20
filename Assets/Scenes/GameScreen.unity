@@ -2928,7 +2928,7 @@ MonoBehaviour:
   playerBody: {fileID: 1540657792191495681, guid: 2f1d297db11f6f848b8ea018404bdd3d, type: 3}
   playerBodySpawned: 0
   spawnCooldown: 5
-  timeRemaining: 3
+  timeRemaining: 180
   timeText: {fileID: 11669612}
 --- !u!1 &1926058352
 GameObject:
