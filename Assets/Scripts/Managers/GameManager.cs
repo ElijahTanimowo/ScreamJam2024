@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameState currentState;
     public static GameManager instance;
     public bool isPaused = false;
+    [SerializeField] GameObject pauseMenu;
 
     [Header("Player Info")]
     [SerializeField] GameObject playerBody;
@@ -102,12 +103,14 @@ public class GameManager : MonoBehaviour
     void PauseGame()
     {
         currentState = GameState.Paused;
+        pauseMenu.gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
     void ResumeGame()
     {
         currentState = GameState.Playing;
+        pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1f;
     }
 
