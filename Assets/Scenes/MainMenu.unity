@@ -398,7 +398,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 45f1b1239cbcafb48b52a7b3a316377e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 511fff35b00ce3442a343b08dac54166, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -430,11 +430,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundImage: {fileID: 1029233671}
   backgroundSprites:
-  - {fileID: 21300000, guid: 45f1b1239cbcafb48b52a7b3a316377e, type: 3}
-  - {fileID: 21300000, guid: 23783dbaa3324bc4b8fe9eb4d2830a05, type: 3}
-  - {fileID: 21300000, guid: 1066772b01a4c964f8157cae0019f644, type: 3}
-  fadeDuration: 1
-  displayDuration: 10
+  - {fileID: 21300000, guid: 511fff35b00ce3442a343b08dac54166, type: 3}
+  - {fileID: 21300000, guid: 387542e6e932c844e943b0f9b9c7161c, type: 3}
+  - {fileID: 21300000, guid: 3cc5342af8d89bc448cd9e0b518c3542, type: 3}
+  - {fileID: 21300000, guid: bf24e9877ccf91a4a8d70c54a6d5ddca, type: 3}
+  - {fileID: 21300000, guid: 6ec9ce81bed331e4b8be1d10cfe675e4, type: 3}
+  - {fileID: 21300000, guid: 9a5eb6ceaeb8b914383a1fec305f9993, type: 3}
+  - {fileID: 21300000, guid: 0002b0a365f9a2f478aa80b585cbc72d, type: 3}
+  displayDuration: 4.6
+  lastBackgroundDisplayDuration: 1.2
 --- !u!1 &1364763378
 GameObject:
   m_ObjectHideFlags: 0
