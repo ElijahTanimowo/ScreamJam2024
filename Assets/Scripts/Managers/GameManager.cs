@@ -20,13 +20,12 @@ public class GameManager : MonoBehaviour
     [Header("Monster Spawning Info")]
     [SerializeField] float spawnCooldown = 5f;
     [SerializeField] bool onCooldown = false;
+    [SerializeField] bool isSpawning = true;
 
     [Header("Clock Info")]
     [SerializeField] float timeRemaining = 180f;
     [SerializeField] bool isTimeRunning = false;
     public TextMeshProUGUI timeText;
-
-    
 
     private void Awake()
     {
@@ -58,13 +57,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentState == GameState.Playing)
-        { 
-            Timer();
-        }
+        Timer();
         if (currentState != GameState.End)
         {
             StartCoroutine(SpawnMonstersTimer());
+        }
+        else if(currentState == GameState.End)
+        {
+            isSpawning = false;
+            StopCoroutine(SpawnMonstersTimer());
         }
     }
 
@@ -74,7 +75,7 @@ public class GameManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator SpawnMonstersTimer()
     {
-        while (true)
+        while (isSpawning)
         {
             if (!onCooldown)
             {
@@ -111,13 +112,17 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                //Time is up
                 Debug.Log("Time is up");
                 timeRemaining = 0;
                 isTimeRunning = false;
 
+                //Spawn Player body
                 if (!playerBodySpawned)
                 {
+                    //Spawn Body
                     SpawnManager.instance.CanSpawnPlayerBody(playerBody);
+                    //Clear time
                     timeText.text = "";
                 }
             }

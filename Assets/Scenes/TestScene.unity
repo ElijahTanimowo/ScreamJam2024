@@ -3120,12 +3120,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875359778}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1523324323}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &884240078
 GameObject:
@@ -6475,10 +6475,11 @@ Transform:
   m_GameObject: {fileID: 1523324320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.79, y: 0.44, z: 0}
+  m_LocalPosition: {x: 0, y: 5.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 875359781}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1523324324
@@ -6507,7 +6508,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1523324325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8641,7 +8642,7 @@ MonoBehaviour:
   playerBodySpawned: 0
   spawnCooldown: 5
   onCooldown: 0
-  timeRemaining: 180
+  timeRemaining: 5
   isTimeRunning: 0
   timeText: {fileID: 997259341}
 --- !u!4 &2134580305
@@ -8878,7 +8879,6 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 875359781}
   - {fileID: 517234957}
   - {fileID: 2134580305}
   - {fileID: 1770241338}
