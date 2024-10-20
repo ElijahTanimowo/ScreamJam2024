@@ -148,9 +148,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -756,7 +756,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Insanity-SpriteSheet_0: 4551541231608413760
+      Insanity-SpriteSheet_1: -7572812658769976009
+      Insanity-SpriteSheet_10: 5211410202921352029
+      Insanity-SpriteSheet_11: -7345390429155742826
+      Insanity-SpriteSheet_12: -5750803594606247311
+      Insanity-SpriteSheet_13: 4749942122163809080
+      Insanity-SpriteSheet_14: -8993869611649980339
+      Insanity-SpriteSheet_15: 5323947188221130318
+      Insanity-SpriteSheet_16: -2712543610724650270
+      Insanity-SpriteSheet_17: 5193519920582854077
+      Insanity-SpriteSheet_18: 2136205796687707147
+      Insanity-SpriteSheet_19: 7830249867068278574
+      Insanity-SpriteSheet_2: -1466756799971095193
+      Insanity-SpriteSheet_20: 7686506806823067451
+      Insanity-SpriteSheet_21: 3358010953739560536
+      Insanity-SpriteSheet_22: 1810340694016252293
+      Insanity-SpriteSheet_23: -610656193405358790
+      Insanity-SpriteSheet_24: -3190762353731691645
+      Insanity-SpriteSheet_25: 8559584732089099427
+      Insanity-SpriteSheet_3: -6289287130214334728
+      Insanity-SpriteSheet_4: 6370545989594798017
+      Insanity-SpriteSheet_5: -4056116639812702482
+      Insanity-SpriteSheet_6: -1060025856432589626
+      Insanity-SpriteSheet_7: 2524128404261599906
+      Insanity-SpriteSheet_8: 4824408842031136193
+      Insanity-SpriteSheet_9: -8016134617098696468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

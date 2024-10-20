@@ -79,9 +79,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -204,7 +204,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      morgue_tilesheet_0_0: -5147705893068398216
+      morgue_tilesheet_0_1: 2807053085464315014
+      morgue_tilesheet_0_2: 9176588083825801136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

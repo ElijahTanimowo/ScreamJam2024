@@ -157,9 +157,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -828,7 +828,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Insanity-SpriteSheet5x_0: 271419586812217921
+      Insanity-SpriteSheet5x_1: -5585645692639294805
+      Insanity-SpriteSheet5x_10: 6777935945611051859
+      Insanity-SpriteSheet5x_11: 8113777619147473869
+      Insanity-SpriteSheet5x_12: 2603814296693130323
+      Insanity-SpriteSheet5x_13: -4661571004878489300
+      Insanity-SpriteSheet5x_14: 5994149689455800485
+      Insanity-SpriteSheet5x_15: 6699325019880316368
+      Insanity-SpriteSheet5x_16: -4353096245375096029
+      Insanity-SpriteSheet5x_17: -2704311399739207937
+      Insanity-SpriteSheet5x_18: 2271503357033679985
+      Insanity-SpriteSheet5x_19: 3606092536876302767
+      Insanity-SpriteSheet5x_2: 3435971176331753789
+      Insanity-SpriteSheet5x_20: 3007068162385815757
+      Insanity-SpriteSheet5x_21: -8270882062590393633
+      Insanity-SpriteSheet5x_22: 5216049272609651381
+      Insanity-SpriteSheet5x_23: 3171431529156514235
+      Insanity-SpriteSheet5x_24: -1977910007424359446
+      Insanity-SpriteSheet5x_25: -6075726167839551757
+      Insanity-SpriteSheet5x_26: 1304970065428840906
+      Insanity-SpriteSheet5x_27: -6339029951883288632
+      Insanity-SpriteSheet5x_28: 2967458412919163044
+      Insanity-SpriteSheet5x_3: -802730121814901741
+      Insanity-SpriteSheet5x_4: 2417639342412827914
+      Insanity-SpriteSheet5x_5: 6956761072999204513
+      Insanity-SpriteSheet5x_6: 347852955764994174
+      Insanity-SpriteSheet5x_7: -4607108876132293135
+      Insanity-SpriteSheet5x_8: -356927691330188531
+      Insanity-SpriteSheet5x_9: 4642673460915737991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
