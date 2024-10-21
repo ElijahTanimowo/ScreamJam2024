@@ -23,6 +23,10 @@ public class MonsterBase : MonoBehaviour
     [SerializeField] protected float adjustSpeed;
     [SerializeField] protected float currentSpeed;
 
+    [Header("Movement")]
+    protected Vector2 movement;
+    protected float lastMovement = -1;
+
     [Header("AI")]
     protected NavMeshAgent agent;
 
@@ -34,8 +38,6 @@ public class MonsterBase : MonoBehaviour
         monsterCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
-        
-
     }
     protected virtual void Start()
     {
@@ -48,7 +50,7 @@ public class MonsterBase : MonoBehaviour
 
     protected virtual void Update()
     {
-        
+        UpdateMovement();
     }
 
     protected virtual void FixedUpdate()
@@ -80,8 +82,38 @@ public class MonsterBase : MonoBehaviour
         }
     }
 
+    protected void UpdateMovement()
+    {
+        if (changeSpeed)
+        {
+            currentSpeed = adjustSpeed;
+        }
+        else
+        {
+            currentSpeed = defaultSpeed;
+        }
+        agent.speed = currentSpeed;
 
+        Vector2 velocity = new Vector2(agent.velocity.x, agent.velocity.y);
+        movement = velocity.normalized;
 
+        // if nightmare is almost idle
+        if (velocity.sqrMagnitude < 0.01f)
+        {
+            if (movement.y == 0)
+                // keep last direction
+                anim.SetFloat("Vertical", lastMovement);
+            if (movement.x == 0)
+                // keep last direction
+                anim.SetFloat("Horizontal", lastMovement);
+        }
+        else
+        {
+            // update direction
+            anim.SetFloat("Horizontal", movement.x);
+            anim.SetFloat("Vertical", movement.y);
+        }
 
-
+        anim.SetFloat("Speed", velocity.sqrMagnitude);
+    }
 }
