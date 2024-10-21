@@ -481,7 +481,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Right side walk_0: -4563745508360233660
+      Right side walk_1: 4925868384235860468
+      Right side walk_10: 4993525633995689854
+      Right side walk_11: -9204989420928226449
+      Right side walk_12: 8638773274499988797
+      Right side walk_13: 7033857438707846221
+      Right side walk_2: -4639321170410734600
+      Right side walk_3: -3357268318260616396
+      Right side walk_4: 2220081432106088947
+      Right side walk_5: 8030396303193111132
+      Right side walk_6: -3126452102406247503
+      Right side walk_7: 1120450329003243941
+      Right side walk_8: 4965070899261308782
+      Right side walk_9: -1228757819534376454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -25,41 +25,44 @@ public class FlashlightController : MonoBehaviour
 
     void Update()
     {
-        // Get mouse position
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
-
-        // Get direction
-        Vector3 direction = mousePos - transform.position;
-
-        // Get angle in degrees, convert to degrees
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        // Check if player is idle
-        bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") ||
-            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") ||
-            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") ||
-            playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left");
-
-        if (isIdle)
+        if (!GameManager.instance.isPaused)
         {
-            // Determine Idle Stance
-            HandleIdleDirection(mousePos);
-            // allow free rotation
-            transform.rotation = Quaternion.Euler(0, 0, angle);
-        }
-        else
-        {
-            // limit flashlight rotation
-            UpdateFlashlightDirection();
-            if (IsInFlashlightRotationLimits(angle))
+            // Get mouse position
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos.z = 0;
+
+            // Get direction
+            Vector3 direction = mousePos - transform.position;
+
+            // Get angle in degrees, convert to degrees
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            // Check if player is idle
+            bool isIdle = playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") ||
+                playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") ||
+                playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") ||
+                playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left");
+
+            if (isIdle)
             {
+                // Determine Idle Stance
+                HandleIdleDirection(mousePos);
+                // allow free rotation
                 transform.rotation = Quaternion.Euler(0, 0, angle);
             }
-        }
+            else
+            {
+                // limit flashlight rotation
+                UpdateFlashlightDirection();
+                if (IsInFlashlightRotationLimits(angle))
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, angle);
+                }
+            }
 
-        // Check for enemies in the flashlight cone
-        CheckForEnemies(direction);
+            // Check for enemies in the flashlight cone
+            CheckForEnemies(direction);
+        }
     }
 
     void HandleIdleDirection(Vector3 mousePos)

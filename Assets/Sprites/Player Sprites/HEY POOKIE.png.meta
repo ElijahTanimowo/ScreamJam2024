@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HEY POOKIE_0: 7854673262319756784
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
