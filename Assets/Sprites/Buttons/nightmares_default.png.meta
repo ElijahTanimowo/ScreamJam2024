@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: 99c34af9fcf6e8d4ea57e343ffb5c0d7
+guid: bd6ab95830c08544e9081e9801859534
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3688771814875562523
-    second: options_selceted_0
+      213: 8158041273326588293
+    second: nightmares_default_0
   - first:
-      213: 3373997515184877746
-    second: options_selceted_1
+      213: -6392371152143703386
+    second: nightmares_default_1
   - first:
-      213: 7838478087417520913
-    second: options_selceted_2
+      213: -9046483192889985039
+    second: nightmares_default_2
   - first:
-      213: 7030100488415106497
-    second: options_selceted_3
+      213: 2467869144962198294
+    second: nightmares_default_3
   - first:
-      213: -7630792218726092903
-    second: options_selceted_4
+      213: 222773526773771579
+    second: nightmares_default_4
   - first:
-      213: 4054281058920533725
-    second: options_selceted_5
+      213: -1565923857730806931
+    second: nightmares_default_5
   - first:
-      213: 3534402160147056375
-    second: options_selceted_6
+      213: 2635683914885433794
+    second: nightmares_default_6
+  - first:
+      213: 120852846114355771
+    second: nightmares_default_7
+  - first:
+      213: -1904287835087384093
+    second: nightmares_default_8
+  - first:
+      213: 365981946590357943
+    second: nightmares_default_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,13 +166,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: options_selceted_0
+      name: nightmares_default_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 150
-        height: 214
+        x: 4
+        y: 12
+        width: 121
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ed7edc0499deccc0800000000000000
-      internalID: -3688771814875562523
+      spriteID: 5815b9f905f273170800000000000000
+      internalID: 8158041273326588293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_1
+      name: nightmares_default_1
       rect:
         serializedVersion: 2
-        x: 176
-        y: 11
-        width: 99
-        height: 213
+        x: 108
+        y: 23
+        width: 84
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b035a52dd8d2de20800000000000000
-      internalID: 3373997515184877746
+      spriteID: 6a2250c2e4cb947a0800000000000000
+      internalID: -6392371152143703386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_2
+      name: nightmares_default_2
       rect:
         serializedVersion: 2
-        x: 281
-        y: 19
-        width: 142
-        height: 194
+        x: 186
+        y: 39
+        width: 77
+        height: 115
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 113643c5a4ed7cc60800000000000000
-      internalID: 7838478087417520913
+      spriteID: 1f73045677f647280800000000000000
+      internalID: -9046483192889985039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_3
+      name: nightmares_default_3
       rect:
         serializedVersion: 2
-        x: 363
+        x: 267
         y: 16
-        width: 120
-        height: 159
+        width: 79
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +243,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c5584ba52fef8160800000000000000
-      internalID: 7030100488415106497
+      spriteID: 61b6e9979e1af3220800000000000000
+      internalID: 2467869144962198294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_4
+      name: nightmares_default_4
       rect:
         serializedVersion: 2
-        x: 498
+        x: 336
+        y: 37
+        width: 84
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d26b0a753771300800000000000000
+      internalID: 222773526773771579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nightmares_default_5
+      rect:
+        serializedVersion: 2
+        x: 416
         y: 34
-        width: 132
-        height: 159
+        width: 86
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99f240028eaf91690800000000000000
-      internalID: -7630792218726092903
+      spriteID: d6b55aa4c88b44ae0800000000000000
+      internalID: -1565923857730806931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_5
+      name: nightmares_default_6
       rect:
         serializedVersion: 2
-        x: 642
-        y: 28
-        width: 97
-        height: 182
+        x: 514
+        y: 37
+        width: 60
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dde8d808423b34830800000000000000
-      internalID: 4054281058920533725
+      spriteID: 2c905fe5e84d39420800000000000000
+      internalID: 2635683914885433794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: options_selceted_6
+      name: nightmares_default_7
       rect:
         serializedVersion: 2
-        x: 763
-        y: 18
-        width: 85
-        height: 164
+        x: 579
+        y: 44
+        width: 75
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,8 +327,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7f640f0e908bc0130800000000000000
-      internalID: 3534402160147056375
+      spriteID: b3abdb2f50b5da100800000000000000
+      internalID: 120852846114355771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nightmares_default_8
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 57
+        width: 69
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1d487ad4c9295e0800000000000000
+      internalID: -1904287835087384093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nightmares_default_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 54
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b969b034aa341500800000000000000
+      internalID: 365981946590357943
       vertices: []
       indices: 
       edges: []
@@ -314,13 +386,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      options_selceted_0: -3688771814875562523
-      options_selceted_1: 3373997515184877746
-      options_selceted_2: 7838478087417520913
-      options_selceted_3: 7030100488415106497
-      options_selceted_4: -7630792218726092903
-      options_selceted_5: 4054281058920533725
-      options_selceted_6: 3534402160147056375
+      nightmares_default_0: 8158041273326588293
+      nightmares_default_1: -6392371152143703386
+      nightmares_default_2: -9046483192889985039
+      nightmares_default_3: 2467869144962198294
+      nightmares_default_4: 222773526773771579
+      nightmares_default_5: -1565923857730806931
+      nightmares_default_6: 2635683914885433794
+      nightmares_default_7: 120852846114355771
+      nightmares_default_8: -1904287835087384093
+      nightmares_default_9: 365981946590357943
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

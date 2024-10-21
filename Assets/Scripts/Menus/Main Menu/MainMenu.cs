@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
     public LevelLoader levelLoader;
     public GameObject mainMenu;
     public GameObject optionsMenu;
+    public GameObject credits;
+
     public void PlayGame()
     {
         levelLoader.LoadGame();
@@ -21,7 +23,8 @@ public class MainMenu : MonoBehaviour
 
     public void RollCredits()
     {
-
+        mainMenu.SetActive(false);
+        credits.SetActive(true);
     }
 
     public void ExitGame()

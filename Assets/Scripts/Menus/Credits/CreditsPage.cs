@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OptionsMenu : MonoBehaviour
+public class CreditsPage : MonoBehaviour
 {
     public GameObject mainMenu;
-    public GameObject optionsMenu;
+    public GameObject credits;
 
     public void BackButton()
     {
         mainMenu.SetActive(true);
-        optionsMenu.SetActive(false);
+        credits.SetActive(false);
     }
 }
