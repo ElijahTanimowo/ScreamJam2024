@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -245,12 +245,13 @@ MonoBehaviour:
   stoppingDistance: 1
   changeSpeed: 0
   lifeTime: 15
-  audioClips:
-  - {fileID: 8300000, guid: b54ff0ed75fcfc34ca4c21b08f045e4b, type: 3}
-  - {fileID: 8300000, guid: 4d37efc09e8e3534599a727b198c321d, type: 3}
   defaultSpeed: 2
   adjustSpeed: 6
   currentSpeed: 0
+  audioLifeTime: 0
+  audioClips:
+  - {fileID: 8300000, guid: b54ff0ed75fcfc34ca4c21b08f045e4b, type: 3}
+  - {fileID: 8300000, guid: 4d37efc09e8e3534599a727b198c321d, type: 3}
 --- !u!195 &5402646379056612671
 NavMeshAgent:
   m_ObjectHideFlags: 0

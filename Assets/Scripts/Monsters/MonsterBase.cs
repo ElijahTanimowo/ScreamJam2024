@@ -18,13 +18,16 @@ public class MonsterBase : MonoBehaviour
     //Check State of monster speed
     public bool changeSpeed = false;
     public float lifeTime = 15f;
-    public AudioClip[] audioClips;
+    
    
 
-    [Header("Monster Stats")]
+    [Header("Monster Information")]
     [SerializeField] protected float defaultSpeed;
     [SerializeField] protected float adjustSpeed;
     [SerializeField] protected float currentSpeed;
+    [SerializeField] protected int audioLifeTime;
+    public AudioClip[] audioClips;
+    bool audioHasBeenPlayed = false;
 
     [Header("Movement")]
     protected Vector2 movement;
@@ -62,6 +65,7 @@ public class MonsterBase : MonoBehaviour
         PathFinding();
     }
 
+
     private void PathFinding()
     {
         //Get Direction of player
@@ -86,11 +90,20 @@ public class MonsterBase : MonoBehaviour
         }
     }
 
+    protected void PlaySound()
+    {
+        if (!monsterNoise.isPlaying)
+        {
+            monsterNoise.PlayOneShot(audioClips[0]);
+        }
+    }
+
     protected void UpdateMovement()
     {
         if (changeSpeed)
         {
             currentSpeed = adjustSpeed;
+            PlaySound();
         }
         else
         {
