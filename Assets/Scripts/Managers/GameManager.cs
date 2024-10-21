@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -11,11 +8,14 @@ public class GameManager : MonoBehaviour
     [Header("Game Manager Info")]
     public GameState currentState;
     public static GameManager instance;
+    public bool isPaused = false;
+    public GameObject pauseMenu;
 
     [Header("Player Info")]
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
     private Transform player;
+
 
     [Header("Monster Spawning Info")]
     [SerializeField] float spawnCooldown = 5f;
@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        //Disable the pause Menu
+        pauseMenu.gameObject.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -57,24 +60,62 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentState != GameState.Paused)
+        if (currentState == GameState.Playing)
         {
+            Time.timeScale = 1f;
             Timer();
             if (currentState != GameState.End)
             {
-                
+
                 StartCoroutine(SpawnMonstersTimer());
             }
+        }
 
-            //End the session
-            else if (currentState == GameState.End)
-            {
-                isSpawning = false;
-                StopCoroutine(SpawnMonstersTimer());
-                SpawnManager.instance.ClearMonsters();
-            }
+        //End the session
+        else if (currentState == GameState.End)
+        {
+            isSpawning = false;
+            StopCoroutine(SpawnMonstersTimer());
+            SpawnManager.instance.ClearMonsters();
         }
     }
+
+
+    public void SwitchScenes(string _sceneName)
+    {
+        SceneManager.LoadScene(_sceneName);
+    }
+
+    /// <summary>
+    /// Controls Pause system
+    /// </summary>
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            PauseGame();
+        }
+        else
+        {
+            ResumeGame();
+        }
+    }
+
+    void PauseGame()
+    {
+        currentState = GameState.Paused;
+        pauseMenu.gameObject.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void ResumeGame()
+    {
+        currentState = GameState.Playing;
+        pauseMenu.gameObject.SetActive(false);
+    }
+
 
     /// <summary>
     /// Controls the time when monster spawns
@@ -111,11 +152,11 @@ public class GameManager : MonoBehaviour
     {
         if (isTimeRunning)
         {
-            if(timeRemaining > 0)
+            if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
-                
+
             }
             else
             {
