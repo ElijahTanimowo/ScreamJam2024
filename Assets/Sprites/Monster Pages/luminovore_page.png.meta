@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      luminovore_page_0: -8075454319717540052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
