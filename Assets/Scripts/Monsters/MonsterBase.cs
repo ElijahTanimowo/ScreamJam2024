@@ -9,6 +9,8 @@ public class MonsterBase : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public SpriteRenderer spriteRenderer { get; private set; }
     public CapsuleCollider2D monsterCollider { get; private set; }
+    public AudioSource monsterNoise {  get; private set; }
+
 
     [Header("Other Information")]
     public float stoppingDistance;
@@ -16,6 +18,8 @@ public class MonsterBase : MonoBehaviour
     //Check State of monster speed
     public bool changeSpeed = false;
     public float lifeTime = 15f;
+    public AudioClip[] audioClips;
+   
 
     [Header("Monster Stats")]
     [SerializeField] protected float defaultSpeed;
@@ -35,6 +39,7 @@ public class MonsterBase : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         monsterCollider = GetComponent<CapsuleCollider2D>();
+        monsterNoise = GetComponentInChildren<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
     }
