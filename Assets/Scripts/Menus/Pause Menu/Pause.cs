@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    public LevelLoader levelLoader;
+
     public void QuitGame()
     {
-        GameManager.instance.SwitchScenes("MainMenu");
+        Time.timeScale = 1f;
+        levelLoader.ExitToMainMenu();
     }
 
     public void ReturnGame()

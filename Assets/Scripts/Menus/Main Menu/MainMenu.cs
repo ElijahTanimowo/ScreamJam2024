@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public LevelLoader levelLoader;
-
+    public GameObject mainMenu;
+    public GameObject optionsMenu;
     public void PlayGame()
     {
         levelLoader.LoadGame();
@@ -14,7 +15,8 @@ public class MainMenu : MonoBehaviour
 
     public void OpenOptions()
     {
-
+        mainMenu.SetActive(false);
+        optionsMenu.SetActive(true);
     }
 
     public void RollCredits()
