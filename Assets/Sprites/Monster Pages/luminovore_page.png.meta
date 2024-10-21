@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c684221e8cc87624fbb338511d3fca5f
+guid: d7b82f94a369bd943b75a469d2a15ca9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7854673262319756784
-    second: HEY POOKIE_0
+      213: -8075454319717540052
+    second: luminovore_page_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HEY POOKIE_0
+      name: luminovore_page_0
       rect:
         serializedVersion: 2
-        x: 329
-        y: 0
-        width: 302
-        height: 871
+        x: 8
+        y: 9
+        width: 765
+        height: 879
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f5e35b57b7610d60800000000000000
-      internalID: 7854673262319756784
+      spriteID: c2f9751f4193eef80800000000000000
+      internalID: -8075454319717540052
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      HEY POOKIE_0: 7854673262319756784
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

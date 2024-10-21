@@ -475,6 +475,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2698342870083364202, guid: eb413decb0495294aba91d769091d098, type: 3}
   m_PrefabInstance: {fileID: 296085437}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &325595771 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6170644233399196002, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
+  m_PrefabInstance: {fileID: 726685418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d13914751808040afb06877a7838eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &358211428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,19 +1024,23 @@ PrefabInstance:
     - target: {fileID: 3629290422273065466, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1870097594}
+      objectReference: {fileID: 325595771}
     - target: {fileID: 3629290422273065466, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitToMainMenu
+      value: QuitGame
       objectReference: {fileID: 0}
     - target: {fileID: 3629290422273065466, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelLoader, Assembly-CSharp
+      value: Pause, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5568624139320965332, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
       propertyPath: m_Name
       value: PlayerHUD
       objectReference: {fileID: 0}
+    - target: {fileID: 6170644233399196002, guid: 0fb4f20005eef66499d720e3094726c7, type: 3}
+      propertyPath: levelLoader
+      value: 
+      objectReference: {fileID: 1870097594}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
