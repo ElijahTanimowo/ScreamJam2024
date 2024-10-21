@@ -13,7 +13,6 @@ public class FlashlightController : MonoBehaviour
 
     [SerializeField] Animator playerAnimator;
 
-
     // Keep track of monsters currently in the flashlight
     private HashSet<MonsterBase> monstersInLight = new HashSet<MonsterBase>();
 
@@ -61,7 +60,7 @@ public class FlashlightController : MonoBehaviour
             }
 
             // Check for enemies in the flashlight cone
-            CheckForEnemies(direction);
+            CheckForEnemies();
         }
     }
 
@@ -125,8 +124,11 @@ public class FlashlightController : MonoBehaviour
         }
     }
 
-    void CheckForEnemies(Vector3 direction)
+    void CheckForEnemies()
     {
+        // get flashlight direction
+        Vector3 flashlightDirection = transform.right;
+
         // Cast cone of rays
         int rayCount = 10;
         float angleStep = flashlightAngle / rayCount;
@@ -140,7 +142,7 @@ public class FlashlightController : MonoBehaviour
             float angle = -flashlightAngle / 2 + angleStep * i;
 
             // Calculate direction
-            Vector3 rayDirection = Quaternion.Euler(0, 0, angle) * direction;
+            Vector3 rayDirection = Quaternion.Euler(0, 0, angle) * flashlightDirection;
 
             // Cast ray
             RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, flashlightDistance, enemyLayer);
@@ -150,7 +152,7 @@ public class FlashlightController : MonoBehaviour
             {
                 // Calculate angle between flashlight direction and enemy direction
                 Vector3 enemyDirection = hit.transform.position - transform.position;
-                float angleToEnemy = Vector3.Angle(direction, enemyDirection);
+                float angleToEnemy = Vector3.Angle(flashlightDirection, enemyDirection);
 
                 // Check if enemy is in flashlight cone
                 if (angleToEnemy < flashlightAngle / 2f)
@@ -163,7 +165,6 @@ public class FlashlightController : MonoBehaviour
                         // Add monster to this hit set
                         monstersHitThisFrame.Add(monster);
                     }
-
                 }
             }
         }
@@ -176,6 +177,7 @@ public class FlashlightController : MonoBehaviour
                 monster.changeSpeed = false; // Reset the monster's speed
             }
         }
+
         //Add to list
         monstersInLight = monstersHitThisFrame;
     }
