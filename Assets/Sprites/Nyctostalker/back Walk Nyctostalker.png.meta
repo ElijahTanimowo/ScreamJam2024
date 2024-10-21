@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -324,7 +324,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      back Walk shitter_0: 5259012798579067003
+      back Walk shitter_1: -6271196281596122206
+      back Walk shitter_2: -669353506784596767
+      back Walk shitter_3: 1213683460607508661
+      back Walk shitter_4: 2176807244753801420
+      back Walk shitter_5: 3666089412996033810
+      back Walk shitter_6: -5290838107548185622
+      back Walk shitter_7: -3576374805060510963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
