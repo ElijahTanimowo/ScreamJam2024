@@ -9239,8 +9239,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5686451902306820495, guid: 0aa836c5fc8900f4d8c06df66d8b23a4, type: 3}
+      propertyPath: m_Size.x
+      value: 71.06005
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686451902306820495, guid: 0aa836c5fc8900f4d8c06df66d8b23a4, type: 3}
       propertyPath: m_Size.y
       value: 42.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686451902306820495, guid: 0aa836c5fc8900f4d8c06df66d8b23a4, type: 3}
+      propertyPath: m_Offset.x
+      value: -8.559972
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20232,7 +20240,7 @@ MonoBehaviour:
   playerBody: {fileID: 1540657792191495681, guid: 2f1d297db11f6f848b8ea018404bdd3d, type: 3}
   playerBodySpawned: 0
   spawnCooldown: 5
-  timeRemaining: 180
+  timeRemaining: 3
   timeText: {fileID: 726685420}
 --- !u!1 &1926058352
 GameObject:
