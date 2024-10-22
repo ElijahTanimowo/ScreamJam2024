@@ -22588,6 +22588,7 @@ MonoBehaviour:
   playerBody: {fileID: 1540657792191495681, guid: 2f1d297db11f6f848b8ea018404bdd3d, type: 3}
   playerBodySpawned: 0
   deathScene: {fileID: 712863912}
+  winScene: {fileID: 1076097960}
   spawnItemCooldown: 10
   spawnCooldown: 5
   timeRemaining: 180

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
     public GameObject deathScene;
+    public GameObject winScene;
     private Transform player;
     bool onItemCooldown = false;
     [SerializeField] float spawnItemCooldown = 10f;
@@ -122,6 +123,14 @@ public class GameManager : MonoBehaviour
     public void LostGame()
     {
         deathScene.SetActive(true);
+        Time.timeScale = 0;
+        currentState = GameState.End;
+        timeRemaining = 0;
+    }
+
+    public void WinGame()
+    {
+        winScene.SetActive(true);
         Time.timeScale = 0;
         currentState = GameState.End;
         timeRemaining = 0;
