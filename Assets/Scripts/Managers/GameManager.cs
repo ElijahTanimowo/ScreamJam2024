@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public bool playerBodySpawned = false;
     public GameObject deathScene;
     public GameObject winScene;
+    public GameObject innerVoices;
     private Transform player;
     bool onItemCooldown = false;
     [SerializeField] float spawnItemCooldown = 10f;
@@ -136,6 +137,16 @@ public class GameManager : MonoBehaviour
         timeRemaining = 0;
     }
 
+    public void displayInnerVoices()
+    {
+        innerVoices.SetActive(true);
+    }
+
+    public void hideInnerVoices()
+    {
+        innerVoices.SetActive(false);
+    }
+
 
     /// <summary>
     /// Controls the time when monster spawns
@@ -215,6 +226,7 @@ public class GameManager : MonoBehaviour
                     Debug.Log("Body has spawned");
                     //Spawn Body
                     SpawnManager.instance.CanSpawnPlayerBody(playerBody);
+                    displayInnerVoices();
                 }
 
             }
