@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 8040215634465603426}
   - component: {fileID: 3738105124900481342}
   - component: {fileID: 986610332178263077}
+  - component: {fileID: 7561887258597733047}
   - component: {fileID: 2103626703177335958}
   - component: {fileID: 5402646379056612671}
   m_Layer: 3
@@ -230,6 +231,42 @@ CapsuleCollider2D:
   m_Offset: {x: -0.014858723, y: 0.5250052}
   m_Size: {x: 1.48067, y: 2.0500104}
   m_Direction: 0
+--- !u!58 &7561887258597733047
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369289727423246990}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0.43122005}
+  m_Radius: 1.1356413
 --- !u!114 &2103626703177335958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,11 +279,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710c88d51fab5464ca8a0a915aea93d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stoppingDistance: 2
+  stoppingDistance: 1.4
   changeSpeed: 0
   lifeTime: 15
   defaultSpeed: 1
-  adjustSpeed: 4
+  adjustSpeed: 2
   currentSpeed: 0
   audioLifeTime: 0
   audioClips:
