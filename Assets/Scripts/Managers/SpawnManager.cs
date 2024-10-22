@@ -14,7 +14,7 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] int maxAttemptToSpawn = 3;
 
     [Header("Player body Spawn Info")]
-    [SerializeField] Collider2D playerBodySpawn;
+    [SerializeField] Collider2D area;
 
     [Header("Items Info")]
     [SerializeField] GameObject[] items;
@@ -97,6 +97,30 @@ public class SpawnManager : MonoBehaviour
 
     }
 
+    public void SpawnItem()
+    {
+        Vector2 randomSpawnPoint = Vector2.zero;
+        Bounds spawnBound = area.bounds;
+
+        GameObject item = items[Random.Range(0, items.Length)];
+
+        while (true)
+        {
+            //Get Random spawn
+            randomSpawnPoint = new Vector2(
+                Random.Range(spawnBound.min.x, spawnBound.max.x),
+                Random.Range(spawnBound.min.y, spawnBound.max.y)
+                );
+
+            //Check can spawn
+            if (CheckCanSpawn(randomSpawnPoint))
+            {
+                break;
+            }
+        }
+        Instantiate(item, randomSpawnPoint, Quaternion.identity);
+    }
+
     public void CanSpawnPlayerBody(GameObject _playerBodyPrefab)
     {
 
@@ -104,7 +128,7 @@ public class SpawnManager : MonoBehaviour
         Vector2 randomSpawnPoint = Vector2.zero;
 
         //Get the size of the spawn
-        Bounds spawnBound = playerBodySpawn.bounds;
+        Bounds spawnBound = area.bounds;
 
         while (true)
         {

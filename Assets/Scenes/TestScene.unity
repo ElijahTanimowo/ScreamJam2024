@@ -48796,7 +48796,7 @@ MonoBehaviour:
   - {fileID: 145295294}
   spawnCheckSize: {x: 1, y: 1}
   maxAttemptToSpawn: 3
-  playerBodySpawn: {fileID: 916774236}
+  area: {fileID: 916774236}
   items:
   - {fileID: 6273125888462216403, guid: 6a71be8328ae32e4ab17b2e3adaf7ad9, type: 3}
   - {fileID: 1554445687305411743, guid: cba56e95454b45a43bdb99eb4146b0ae, type: 3}

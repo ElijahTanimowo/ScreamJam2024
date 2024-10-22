@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
 
         //Disable the pause Menu
         pauseMenu.gameObject.SetActive(false);
+
     }
 
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         isTimeRunning = true;
 
         currentState = GameState.Playing;
+        SpawnManager.instance.SpawnItem();
     }
 
     // Update is called once per frame
@@ -67,7 +69,6 @@ public class GameManager : MonoBehaviour
             Timer();
             if (currentState != GameState.End)
             {
-
                 StartCoroutine(SpawnMonstersTimer());
             }
         }
