@@ -11,7 +11,6 @@ public class MonsterBase : MonoBehaviour
     public CapsuleCollider2D monsterCollider { get; private set; }
     public AudioSource monsterNoise {  get; private set; }
 
-
     [Header("Other Information")]
     public float stoppingDistance;
     Transform player;
@@ -65,6 +64,14 @@ public class MonsterBase : MonoBehaviour
         PathFinding();
     }
 
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            GameManager.instance.LostGame();
+        }
+    }
+
 
     private void PathFinding()
     {
@@ -87,7 +94,7 @@ public class MonsterBase : MonoBehaviour
         else
         {
             agent.isStopped = true;
-            GameManager.instance.LostGame();
+            
         }
     }
 
