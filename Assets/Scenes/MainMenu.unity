@@ -637,8 +637,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -203, y: 12}
-  m_SizeDelta: {x: 280, y: 500}
+  m_AnchoredPosition: {x: -217.55798, y: 12}
+  m_SizeDelta: {x: 309.1159, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471021013
 MonoBehaviour:
@@ -684,8 +684,18 @@ MonoBehaviour:
     Music
 
 
-    Special
-    Thanks'
+    Level
+    Design
+
+
+    Tile Sets
+
+
+
+    Animation Rigged
+
+
+    Special Thanks'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1461,6 +1471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1247303584}
   - component: {fileID: 1247303585}
+  - component: {fileID: 1247303586}
   m_Layer: 5
   m_Name: RollingCredits
   m_TagString: Untagged
@@ -1511,6 +1522,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1247303586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247303583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787272f14e57c424daf6c92d8b974cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 1131931200}
+  credits: {fileID: 665232894}
 --- !u!1 &1364763378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,6 +1820,18 @@ MonoBehaviour:
 
 
     Elijah Tanimowo
+
+
+    Ralph Robes
+
+
+    AIA
+
+    chasergaming
+
+
+    Elijah
+    Tanimowo
 
 
     Austin Moniz'
