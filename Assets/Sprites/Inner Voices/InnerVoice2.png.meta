@@ -1,0 +1,1203 @@
+fileFormatVersion: 2
+guid: 177a5c90d929ed24dbac8237746f9f68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6216020979137734113
+    second: InnerVoice2_0
+  - first:
+      213: -6408869490698722258
+    second: InnerVoice2_1
+  - first:
+      213: 6347914832177601082
+    second: InnerVoice2_2
+  - first:
+      213: 8897858556719982986
+    second: InnerVoice2_3
+  - first:
+      213: 3342811061965251050
+    second: InnerVoice2_4
+  - first:
+      213: -6176450364325285552
+    second: InnerVoice2_5
+  - first:
+      213: -8650525044459315086
+    second: InnerVoice2_6
+  - first:
+      213: 387225302028651630
+    second: InnerVoice2_7
+  - first:
+      213: 6077320198462979446
+    second: InnerVoice2_8
+  - first:
+      213: 3210357561022264732
+    second: InnerVoice2_9
+  - first:
+      213: -7866658130634315661
+    second: InnerVoice2_10
+  - first:
+      213: -9083233896947022497
+    second: InnerVoice2_11
+  - first:
+      213: 4489020906746047397
+    second: InnerVoice2_12
+  - first:
+      213: 7920142503160029607
+    second: InnerVoice2_13
+  - first:
+      213: 753836479198448990
+    second: InnerVoice2_14
+  - first:
+      213: -8708468063619684340
+    second: InnerVoice2_15
+  - first:
+      213: 5923927858172689987
+    second: InnerVoice2_16
+  - first:
+      213: 1340084894318031143
+    second: InnerVoice2_17
+  - first:
+      213: -7390036788535670826
+    second: InnerVoice2_18
+  - first:
+      213: 2652274019337131633
+    second: InnerVoice2_19
+  - first:
+      213: 161400679075088923
+    second: InnerVoice2_20
+  - first:
+      213: -3313101656545187869
+    second: InnerVoice2_21
+  - first:
+      213: -4449597939959214743
+    second: InnerVoice2_22
+  - first:
+      213: -292514189562113834
+    second: InnerVoice2_23
+  - first:
+      213: -2202603221699125831
+    second: InnerVoice2_24
+  - first:
+      213: 4382822087646278125
+    second: InnerVoice2_25
+  - first:
+      213: -8283114900584496057
+    second: InnerVoice2_26
+  - first:
+      213: 5365199920985941323
+    second: InnerVoice2_27
+  - first:
+      213: -8455248392239316230
+    second: InnerVoice2_28
+  - first:
+      213: 1981428290519745931
+    second: InnerVoice2_29
+  - first:
+      213: -1202768041984156053
+    second: InnerVoice2_30
+  - first:
+      213: -7960066877306033349
+    second: InnerVoice2_31
+  - first:
+      213: -6053549637554854220
+    second: InnerVoice2_32
+  - first:
+      213: -5751812218572458345
+    second: InnerVoice2_33
+  - first:
+      213: -2936475979683052022
+    second: InnerVoice2_34
+  - first:
+      213: 4951096142927474443
+    second: InnerVoice2_35
+  - first:
+      213: -5520933639279640587
+    second: InnerVoice2_36
+  - first:
+      213: -8852686579075030877
+    second: InnerVoice2_37
+  - first:
+      213: 5396241519988540634
+    second: InnerVoice2_38
+  - first:
+      213: -7564845130157464366
+    second: InnerVoice2_39
+  - first:
+      213: 8585266979434303349
+    second: InnerVoice2_40
+  - first:
+      213: -4081884318159209265
+    second: InnerVoice2_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InnerVoice2_0
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 4138
+        width: 710
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e561e9852eb34650800000000000000
+      internalID: 6216020979137734113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_1
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 4108
+        width: 598
+        height: 789
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e246013672f1f07a0800000000000000
+      internalID: -6408869490698722258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_2
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 4199
+        width: 538
+        height: 703
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a116c38e2581850800000000000000
+      internalID: 6347914832177601082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_3
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 3278
+        width: 1129
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89e6f6e63b8b7b70800000000000000
+      internalID: 8897858556719982986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_4
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 4171
+        width: 715
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae16fab23fc046e20800000000000000
+      internalID: 3342811061965251050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_5
+      rect:
+        serializedVersion: 2
+        x: 2640
+        y: 3310
+        width: 656
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0513f8d2e17d84aa0800000000000000
+      internalID: -6176450364325285552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_6
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 3256
+        width: 746
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270e164fd4923f780800000000000000
+      internalID: -8650525044459315086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1810
+        width: 1461
+        height: 1410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6c067f4c53bf5500800000000000000
+      internalID: 387225302028651630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_8
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 2006
+        width: 1944
+        height: 1150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d31bf758af65450800000000000000
+      internalID: 6077320198462979446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_9
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 3154
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95b8ba413b7d8c20800000000000000
+      internalID: 3210357561022264732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_10
+      rect:
+        serializedVersion: 2
+        x: 3247
+        y: 3088
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3786a1a0c1404d290800000000000000
+      internalID: -7866658130634315661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_11
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 2982
+        width: 52
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f558fa055eed1f180800000000000000
+      internalID: -9083233896947022497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_12
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 3066
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab66e71bb43c4e30800000000000000
+      internalID: 4489020906746047397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_13
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 3057
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1a357d4aff9ed60800000000000000
+      internalID: 7920142503160029607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_14
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 3033
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5dca59a84a267a00800000000000000
+      internalID: 753836479198448990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_15
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 2938
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c086d128f6e452780800000000000000
+      internalID: -8708468063619684340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_16
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 2952
+        width: 7
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e7c6d2005063250800000000000000
+      internalID: 5923927858172689987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_17
+      rect:
+        serializedVersion: 2
+        x: 3207
+        y: 2873
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72171be7c10f89210800000000000000
+      internalID: 1340084894318031143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_18
+      rect:
+        serializedVersion: 2
+        x: 3337
+        y: 2836
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d74346e1b0517990800000000000000
+      internalID: -7390036788535670826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_19
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 2631
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17656911b25cec420800000000000000
+      internalID: 2652274019337131633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_20
+      rect:
+        serializedVersion: 2
+        x: 3163
+        y: 2655
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a07ceff096d3200800000000000000
+      internalID: 161400679075088923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_21
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 2574
+        width: 11
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7add0d89f7502d0800000000000000
+      internalID: -3313101656545187869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_22
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 2601
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dcb63af3adf32c0800000000000000
+      internalID: -4449597939959214743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_23
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 2513
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d09367f4e7c0fbf0800000000000000
+      internalID: -292514189562113834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_24
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 2486
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd1e7d2a08ce61e0800000000000000
+      internalID: -2202603221699125831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_25
+      rect:
+        serializedVersion: 2
+        x: 3342
+        y: 2403
+        width: 10
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de174efa779e2dc30800000000000000
+      internalID: 4382822087646278125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_26
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 2111
+        height: 1998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7448aec32e67c0d80800000000000000
+      internalID: -8283114900584496057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_27
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 52
+        width: 981
+        height: 1897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45225fe6e4057a40800000000000000
+      internalID: 5365199920985941323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_28
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 1715
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af202e4926ce8aa80800000000000000
+      internalID: -8455248392239316230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_29
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 1697
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85c65c38827f7b10800000000000000
+      internalID: 1981428290519745931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_30
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 1700
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e975e96d8ee4fe0800000000000000
+      internalID: -1202768041984156053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_31
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 1676
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b22dd6959288190800000000000000
+      internalID: -7960066877306033349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_32
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 157
+        width: 570
+        height: 1539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6295f7da87dfba0800000000000000
+      internalID: -6053549637554854220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_33
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 1691
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796bc39f2457d20b0800000000000000
+      internalID: -5751812218572458345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_34
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 1683
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06468397aa8f37d0800000000000000
+      internalID: -2936475979683052022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_35
+      rect:
+        serializedVersion: 2
+        x: 3434
+        y: 1672
+        width: 30
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fafffb5b3d5b440800000000000000
+      internalID: 4951096142927474443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_36
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 1652
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff7b323b14b163b0800000000000000
+      internalID: -5520933639279640587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_37
+      rect:
+        serializedVersion: 2
+        x: 3443
+        y: 1658
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a06d5ab570f42580800000000000000
+      internalID: -8852686579075030877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_38
+      rect:
+        serializedVersion: 2
+        x: 3455
+        y: 1656
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad48129621d43ea40800000000000000
+      internalID: 5396241519988540634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_39
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 1630
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4ee143f65440790800000000000000
+      internalID: -7564845130157464366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_40
+      rect:
+        serializedVersion: 2
+        x: 3448
+        y: 1624
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f8213c4def42770800000000000000
+      internalID: 8585266979434303349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InnerVoice2_41
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 1588
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccf1e1e6db3a57c0800000000000000
+      internalID: -4081884318159209265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      InnerVoice2_0: 6216020979137734113
+      InnerVoice2_1: -6408869490698722258
+      InnerVoice2_10: -7866658130634315661
+      InnerVoice2_11: -9083233896947022497
+      InnerVoice2_12: 4489020906746047397
+      InnerVoice2_13: 7920142503160029607
+      InnerVoice2_14: 753836479198448990
+      InnerVoice2_15: -8708468063619684340
+      InnerVoice2_16: 5923927858172689987
+      InnerVoice2_17: 1340084894318031143
+      InnerVoice2_18: -7390036788535670826
+      InnerVoice2_19: 2652274019337131633
+      InnerVoice2_2: 6347914832177601082
+      InnerVoice2_20: 161400679075088923
+      InnerVoice2_21: -3313101656545187869
+      InnerVoice2_22: -4449597939959214743
+      InnerVoice2_23: -292514189562113834
+      InnerVoice2_24: -2202603221699125831
+      InnerVoice2_25: 4382822087646278125
+      InnerVoice2_26: -8283114900584496057
+      InnerVoice2_27: 5365199920985941323
+      InnerVoice2_28: -8455248392239316230
+      InnerVoice2_29: 1981428290519745931
+      InnerVoice2_3: 8897858556719982986
+      InnerVoice2_30: -1202768041984156053
+      InnerVoice2_31: -7960066877306033349
+      InnerVoice2_32: -6053549637554854220
+      InnerVoice2_33: -5751812218572458345
+      InnerVoice2_34: -2936475979683052022
+      InnerVoice2_35: 4951096142927474443
+      InnerVoice2_36: -5520933639279640587
+      InnerVoice2_37: -8852686579075030877
+      InnerVoice2_38: 5396241519988540634
+      InnerVoice2_39: -7564845130157464366
+      InnerVoice2_4: 3342811061965251050
+      InnerVoice2_40: 8585266979434303349
+      InnerVoice2_41: -4081884318159209265
+      InnerVoice2_5: -6176450364325285552
+      InnerVoice2_6: -8650525044459315086
+      InnerVoice2_7: 387225302028651630
+      InnerVoice2_8: 6077320198462979446
+      InnerVoice2_9: 3210357561022264732
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
