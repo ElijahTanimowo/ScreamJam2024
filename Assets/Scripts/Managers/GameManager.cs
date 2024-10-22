@@ -168,7 +168,9 @@ public class GameManager : MonoBehaviour
                 //Clear time
                 timeText.text = "";
                 deathScene.SetActive(true);
-                
+                Time.timeScale = 0;
+                currentState = GameState.End;
+
             }
 
             if (!playerBodySpawned)
