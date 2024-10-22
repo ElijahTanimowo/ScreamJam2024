@@ -48831,7 +48831,7 @@ MonoBehaviour:
   items:
   - {fileID: 6273125888462216403, guid: 6a71be8328ae32e4ab17b2e3adaf7ad9, type: 3}
   - {fileID: 1554445687305411743, guid: cba56e95454b45a43bdb99eb4146b0ae, type: 3}
-  itemSpawned: {fileID: 1699201223}
+  itemOnLevel: {fileID: 1699201223}
   placesToSpawn:
   - {fileID: 2014761245}
   - {fileID: 729630884}
