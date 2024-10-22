@@ -16,6 +16,10 @@ public class SpawnManager : MonoBehaviour
     [Header("Player body Spawn Info")]
     [SerializeField] Collider2D playerBodySpawn;
 
+    [Header("Items Info")]
+    [SerializeField] GameObject[] items;
+    public Transform[] placesToSpawn;
+
     private void Awake()
     {
         //Game Manager in world, destory
