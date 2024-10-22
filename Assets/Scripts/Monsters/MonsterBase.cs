@@ -9,7 +9,8 @@ public class MonsterBase : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public SpriteRenderer spriteRenderer { get; private set; }
     public CapsuleCollider2D monsterCollider { get; private set; }
-    public BoxCollider2D attackRangeCollider { get; private set; }
+    public AudioSource monsterNoise {  get; private set; }
+
 
     [Header("Other Information")]
     public float stoppingDistance;
@@ -17,11 +18,16 @@ public class MonsterBase : MonoBehaviour
     //Check State of monster speed
     public bool changeSpeed = false;
     public float lifeTime = 15f;
+    
+   
 
-    [Header("Monster Stats")]
+    [Header("Monster Information")]
     [SerializeField] protected float defaultSpeed;
     [SerializeField] protected float adjustSpeed;
     [SerializeField] protected float currentSpeed;
+    [SerializeField] protected int audioLifeTime;
+    public AudioClip[] audioClips;
+    bool audioHasBeenPlayed = false;
 
     [Header("Movement")]
     protected Vector2 movement;
@@ -36,6 +42,7 @@ public class MonsterBase : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         monsterCollider = GetComponent<CapsuleCollider2D>();
+        monsterNoise = GetComponentInChildren<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
     }
@@ -57,6 +64,7 @@ public class MonsterBase : MonoBehaviour
     {
         PathFinding();
     }
+
 
     private void PathFinding()
     {
@@ -82,11 +90,20 @@ public class MonsterBase : MonoBehaviour
         }
     }
 
+    protected virtual void PlaySound()
+    {
+        if (!monsterNoise.isPlaying)
+        {
+            monsterNoise.PlayOneShot(audioClips[0]);
+        }
+    }
+
     protected void UpdateMovement()
     {
         if (changeSpeed)
         {
             currentSpeed = adjustSpeed;
+            PlaySound();
         }
         else
         {

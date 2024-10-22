@@ -35,4 +35,11 @@ public class Nyctostalker : MonsterBase
         base.FixedUpdate();
     }
 
+    protected override void PlaySound()
+    {
+        if (!monsterNoise.isPlaying)
+        {
+            monsterNoise.PlayOneShot(audioClips[1]);
+        }
+    }
 }
