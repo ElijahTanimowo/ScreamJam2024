@@ -21641,7 +21641,7 @@ MonoBehaviour:
   playerBodySpawned: 0
   deathScene: {fileID: 712863912}
   spawnCooldown: 5
-  timeRemaining: 3
+  timeRemaining: 120
   timeText: {fileID: 726685420}
 --- !u!1 &1907537307
 GameObject:

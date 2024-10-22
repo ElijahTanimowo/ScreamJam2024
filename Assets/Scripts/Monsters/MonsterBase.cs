@@ -87,6 +87,7 @@ public class MonsterBase : MonoBehaviour
         else
         {
             agent.isStopped = true;
+            GameManager.instance.LostGame();
         }
     }
 

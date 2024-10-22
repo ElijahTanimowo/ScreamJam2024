@@ -117,6 +117,14 @@ public class GameManager : MonoBehaviour
         pauseMenu.gameObject.SetActive(false);
     }
 
+    public void LostGame()
+    {
+        deathScene.SetActive(true);
+        Time.timeScale = 0;
+        currentState = GameState.End;
+        timeRemaining = 0;
+    }
+
 
     /// <summary>
     /// Controls the time when monster spawns
@@ -167,10 +175,7 @@ public class GameManager : MonoBehaviour
                 isTimeRunning = false;
                 //Clear time
                 timeText.text = "";
-                deathScene.SetActive(true);
-                Time.timeScale = 0;
-                currentState = GameState.End;
-
+                LostGame();
             }
 
             if (!playerBodySpawned)
