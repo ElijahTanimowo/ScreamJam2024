@@ -13,6 +13,7 @@ public class DeathScreen : MonoBehaviour
 
     public void RestartLevel()
     {
+        Time.timeScale = 1f;
         levelLoader.RestartLevel();
     }
 }

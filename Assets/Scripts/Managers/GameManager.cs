@@ -15,7 +15,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
     public GameObject deathScene;
+    public GameObject winScene;
+    public GameObject innerVoices;
     private Transform player;
+    bool onItemCooldown = false;
+    [SerializeField] float spawnItemCooldown = 10f;
 
 
     [Header("Monster Spawning Info")]
@@ -42,6 +46,7 @@ public class GameManager : MonoBehaviour
 
         //Disable the pause Menu
         pauseMenu.gameObject.SetActive(false);
+
     }
 
     // Start is called before the first frame update
@@ -56,6 +61,7 @@ public class GameManager : MonoBehaviour
         isTimeRunning = true;
 
         currentState = GameState.Playing;
+        SpawnManager.instance.SpawnItem();
     }
 
     // Update is called once per frame
@@ -65,11 +71,8 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1f;
             Timer();
-            if (currentState != GameState.End)
-            {
-
-                StartCoroutine(SpawnMonstersTimer());
-            }
+            StartCoroutine(SpawnMonstersTimer());
+            StartCoroutine(SpawnItemsTimer());
         }
 
         //End the session
@@ -77,6 +80,7 @@ public class GameManager : MonoBehaviour
         {
             isSpawning = false;
             StopCoroutine(SpawnMonstersTimer());
+            StopCoroutine(SpawnItemsTimer());
             SpawnManager.instance.ClearMonsters();
         }
     }
@@ -125,6 +129,24 @@ public class GameManager : MonoBehaviour
         timeRemaining = 0;
     }
 
+    public void WinGame()
+    {
+        winScene.SetActive(true);
+        Time.timeScale = 0;
+        currentState = GameState.End;
+        timeRemaining = 0;
+    }
+
+    public void displayInnerVoices()
+    {
+        innerVoices.SetActive(true);
+    }
+
+    public void hideInnerVoices()
+    {
+        innerVoices.SetActive(false);
+    }
+
 
     /// <summary>
     /// Controls the time when monster spawns
@@ -144,6 +166,24 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    IEnumerator SpawnItemsTimer()
+    {
+        while (isSpawning)
+        {
+            if (!onItemCooldown)
+            {
+                SpawnManager.instance.SpawnItem();
+                onItemCooldown = true;
+                yield return new WaitForSeconds(spawnItemCooldown);
+                onItemCooldown = false;
+            }
+            yield return null;
+        }
+    }
+
+
+
 
     /// <summary>
     /// Spawns Monsters in world
@@ -186,6 +226,7 @@ public class GameManager : MonoBehaviour
                     Debug.Log("Body has spawned");
                     //Spawn Body
                     SpawnManager.instance.CanSpawnPlayerBody(playerBody);
+                    displayInnerVoices();
                 }
 
             }

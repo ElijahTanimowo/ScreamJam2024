@@ -9,6 +9,7 @@ public class PlayerBody : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             GameManager.instance.currentState = GameState.End;
+            GameManager.instance.WinGame();
         }
     }
 }
