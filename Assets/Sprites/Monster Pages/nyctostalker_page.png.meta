@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d7b82f94a369bd943b75a469d2a15ca9
+guid: ce3b6fee8215a3945abe4fff2ade6db5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8075454319717540052
-    second: luminovore_page_0
+      213: 7153972089167926558
+    second: nyctostalker_page_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: luminovore_page_0
+      name: nyctostalker_page_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 765
-        height: 879
+        x: 9
+        y: 2
+        width: 790
+        height: 842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c2f9751f4193eef80800000000000000
-      internalID: -8075454319717540052
+      spriteID: e15d9e336b3084360800000000000000
+      internalID: 7153972089167926558
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      luminovore_page_0: -8075454319717540052
+      nyctostalker_page_0: 7153972089167926558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
