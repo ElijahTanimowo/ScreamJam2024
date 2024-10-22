@@ -90,7 +90,7 @@ public class MonsterBase : MonoBehaviour
         }
     }
 
-    protected void PlaySound()
+    protected virtual void PlaySound()
     {
         if (!monsterNoise.isPlaying)
         {
