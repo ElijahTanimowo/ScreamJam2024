@@ -18,6 +18,7 @@ public class SpawnManager : MonoBehaviour
 
     [Header("Items Info")]
     [SerializeField] GameObject[] items;
+    [SerializeField] Transform itemOnLevel;
     public Transform[] placesToSpawn;
 
     private void Awake()
@@ -118,7 +119,9 @@ public class SpawnManager : MonoBehaviour
                 break;
             }
         }
-        Instantiate(item, randomSpawnPoint, Quaternion.identity);
+        GameObject itemSpawned = Instantiate(item, randomSpawnPoint, Quaternion.identity);
+        itemSpawned.transform.SetParent(itemOnLevel.transform);
+        Destroy(itemSpawned, 10f);
     }
 
     public void CanSpawnPlayerBody(GameObject _playerBodyPrefab)

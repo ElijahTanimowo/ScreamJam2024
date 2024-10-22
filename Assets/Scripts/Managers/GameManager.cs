@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public bool playerBodySpawned = false;
     public GameObject deathScene;
     private Transform player;
+    bool onItemCooldown = false;
+    [SerializeField] float spawnItemCooldown = 10f;
 
 
     [Header("Monster Spawning Info")]
@@ -67,10 +69,8 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 1f;
             Timer();
-            if (currentState != GameState.End)
-            {
-                StartCoroutine(SpawnMonstersTimer());
-            }
+            StartCoroutine(SpawnMonstersTimer());
+            StartCoroutine(SpawnItemsTimer());
         }
 
         //End the session
@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
         {
             isSpawning = false;
             StopCoroutine(SpawnMonstersTimer());
+            StopCoroutine(SpawnItemsTimer());
             SpawnManager.instance.ClearMonsters();
         }
     }
@@ -145,6 +146,24 @@ public class GameManager : MonoBehaviour
             yield return null;
         }
     }
+
+    IEnumerator SpawnItemsTimer()
+    {
+        while (isSpawning)
+        {
+            if (!onItemCooldown)
+            {
+                SpawnManager.instance.SpawnItem();
+                onItemCooldown = true;
+                yield return new WaitForSeconds(spawnItemCooldown);
+                onItemCooldown = false;
+            }
+            yield return null;
+        }
+    }
+
+
+
 
     /// <summary>
     /// Spawns Monsters in world
