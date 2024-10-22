@@ -391,7 +391,7 @@ MonoBehaviour:
   stoppingDistance: 1.1
   changeSpeed: 0
   lifeTime: 15
-  defaultSpeed: 3
+  defaultSpeed: 2
   adjustSpeed: 1
   currentSpeed: 0
   audioLifeTime: 0

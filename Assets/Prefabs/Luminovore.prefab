@@ -283,7 +283,7 @@ MonoBehaviour:
   changeSpeed: 0
   lifeTime: 15
   defaultSpeed: 1
-  adjustSpeed: 4
+  adjustSpeed: 2
   currentSpeed: 0
   audioLifeTime: 0
   audioClips:

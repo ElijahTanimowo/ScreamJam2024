@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
         isTimeRunning = true;
 
         currentState = GameState.Playing;
-        SpawnManager.instance.SpawnItem();
     }
 
     // Update is called once per frame
@@ -173,9 +172,9 @@ public class GameManager : MonoBehaviour
         {
             if (!onItemCooldown)
             {
-                SpawnManager.instance.SpawnItem();
                 onItemCooldown = true;
                 yield return new WaitForSeconds(spawnItemCooldown);
+                SpawnManager.instance.SpawnItem();
                 onItemCooldown = false;
             }
             yield return null;
