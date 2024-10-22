@@ -21639,6 +21639,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 726685419}
   playerBody: {fileID: 1540657792191495681, guid: 2f1d297db11f6f848b8ea018404bdd3d, type: 3}
   playerBodySpawned: 0
+  deathScene: {fileID: 712863912}
   spawnCooldown: 5
   timeRemaining: 3
   timeText: {fileID: 726685420}

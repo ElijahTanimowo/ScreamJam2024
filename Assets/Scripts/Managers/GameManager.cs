@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     [Header("Player Info")]
     [SerializeField] GameObject playerBody;
     public bool playerBodySpawned = false;
+    public GameObject deathScene;
     private Transform player;
 
 
@@ -164,15 +165,22 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Time is up");
                 timeRemaining = 0;
                 isTimeRunning = false;
+                //Clear time
+                timeText.text = "";
+                deathScene.SetActive(true);
+                
+            }
 
-                //Spawn Player body
-                if (!playerBodySpawned)
+            if (!playerBodySpawned)
+            //Spawn Player body
+            {
+                if (timeRemaining <= 60f)
                 {
+                    Debug.Log("Body has spawned");
                     //Spawn Body
                     SpawnManager.instance.CanSpawnPlayerBody(playerBody);
-                    //Clear time
-                    timeText.text = "";
                 }
+
             }
         }
     }
