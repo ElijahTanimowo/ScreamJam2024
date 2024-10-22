@@ -45,7 +45,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.254
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -245,8 +245,8 @@ MonoBehaviour:
   stoppingDistance: 1
   changeSpeed: 0
   lifeTime: 15
-  defaultSpeed: 2
-  adjustSpeed: 6
+  defaultSpeed: 1
+  adjustSpeed: 4
   currentSpeed: 0
   audioLifeTime: 0
   audioClips:
